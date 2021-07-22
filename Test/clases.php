@@ -8,7 +8,7 @@
     $mysqli = new mysqli($mybd_host, $mybd_usuario, $mybd_password, $mybd_base);
    
         
-    function enviarMensajes($cantidadMensajes,$cantidadEquipos){ 
+    function enviarMensajes($cantidadMensajes,$cantidadEquipos,$tipoEquipo){ 
             //Esta funcion inventa mensajes de dispositivos, con una estructura en particular  que posee el mensaje
             // la funcion genera multiples mensajes de multipls equipos *hasta 10 diferentes
             // inventa de forma aleatoria mensajes validos e invalidos.
@@ -57,7 +57,7 @@
                $fecha = date("YmdHms");
                
              echo "<br> Numero de Mensaje: $randomice -  IMEI: $imei  -  Fecha: $fecha   - Tipo Mensaje: $tipo_mensaje  ";
-             $message = $tipo_mensaje.",060212,".$imei.",gv300,,10,1,1,0.0,186,25.".$bateria.",".$latitud.",".$longitud.",".$fecha.",0722,0007,1141,2415,00,0.0,,,,70,110000,,,,".$fecha.",".$randomice."$";
+             $message = $tipo_mensaje.",060212,".$imei.",".$tipoEquipo.",,10,1,1,0.0,186,25.".$bateria.",".$latitud.",".$longitud.",".$fecha.",0722,0007,1141,2415,00,0.0,,,,70,110000,,,,".$fecha.",".$randomice."$";
              fwrite($fp, $message);
              
              sleep($periodo);
