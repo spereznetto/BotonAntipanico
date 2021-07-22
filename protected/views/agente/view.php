@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View agente #<?php echo $model->idAgente; ?></h1>
+<31>Ver informacion de agente numero<?php echo $model->idAgente; ?></h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

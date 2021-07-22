@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update agente <?php echo $model->idAgente; ?></h1>
+<h3>Actualizar  agente <?php echo $model->idAgente; ?></h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update AsignacionDispositivoUsuario <?php echo $model->idAsignacion; ?></h1>
+<h3>Actualizar asignacion <?php echo $model->idAsignacion; ?></h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

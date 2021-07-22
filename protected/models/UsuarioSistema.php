@@ -29,9 +29,9 @@ class UsuarioSistema extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('UsuariootipoUsuario, UsuarioEmail, UsuarioEstadousuario', 'required'),
+			array('UsuarioTipoUsuario, UsuarioEmail, UsuarioEstadousuario', 'required'),
 			array('UsuarioTipoUsuario, UsuarioEstadousuario', 'numerical', 'integerOnly'=>true),
-			array('UsuarioEmail, UsuarioNombre', 'length', 'max'=>30),
+			array('UsuarioEmail, UsuarioNombre', 'length', 'max'=>60),
 			array('UsuarioContrasena', 'length', 'max'=>32),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

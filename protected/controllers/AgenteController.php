@@ -6,7 +6,7 @@ class AgenteController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/column1';
 
 	/**
 	 * @return array action filters
@@ -62,16 +62,20 @@ class AgenteController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new agente;
+		$model=new Agente;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['agente']))
+		if(isset($_POST['Agente']))
 		{
-			$model->attributes=$_POST['agente'];
-			if($model->save())
+			$model->attributes=$_POST['Agente'];
+			if($model->save()){
 				$this->redirect(array('view','id'=>$model->idAgente));
+				}else{
+					print_r($model->getErrors());
+
+				}
 		}
 
 		$this->render('create',array(
@@ -91,9 +95,9 @@ class AgenteController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['agente']))
+		if(isset($_POST['Agente']))
 		{
-			$model->attributes=$_POST['agente'];
+			$model->attributes=$_POST['Agente'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idAgente));
 		}
@@ -122,7 +126,7 @@ class AgenteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('agente');
+		$dataProvider=new CActiveDataProvider('Agente');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -135,8 +139,8 @@ class AgenteController extends Controller
 	{
 		$model=new agente('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['agente']))
-			$model->attributes=$_GET['agente'];
+		if(isset($_GET['Agente']))
+			$model->attributes=$_GET['Agente'];
 
 		$this->render('admin',array(
 			'model'=>$model,

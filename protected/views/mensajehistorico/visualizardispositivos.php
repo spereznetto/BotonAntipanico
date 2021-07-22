@@ -8,9 +8,9 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h3>Gestion de Alertas</h3>
+<h3>Visualizacion de Dispositivos</h3>
 
-<h5>Este modulo muestra una grilla  con las ultimas alertas generadas, desde los mensajes recibidos, su estado y acciones.</h5>
+<h5>Este modulo muestra una grilla con los ultimos mensajes recibidos dese los diferentes moviles, sean o no alertas, esten o no asignados o vincualdos a un usuario final.</h5>
 
 <div class="row" style="padding-left: 10px">
   <div id="movilesDiv" colspan="2" class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="padding-left: 3px; padding-right: 3px;">
@@ -21,7 +21,7 @@ $this->breadcrumbs=array(
         </div>
         
         <?php
-        $this->renderPartial('_grillaUltimasAlertas', array('arrayDataProvider' => $arrayAlertas));
+        $this->renderPartial('_grillaUltimasPosiciones', array('arrayDataProvider' => $arrayDataProvider));
         ?>
       </div>
     </div>

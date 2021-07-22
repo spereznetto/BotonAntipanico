@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create AsignacionDispositivoUsuario</h1>
+<h3>Crear  asignacion</h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

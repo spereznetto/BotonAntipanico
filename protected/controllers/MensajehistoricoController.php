@@ -32,7 +32,7 @@ class MensajehistoricoController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update',('admin'),
+				'actions'=>array('create','update','admin','visualizardispositivos'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -170,4 +170,25 @@ class MensajehistoricoController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	
+    public function actionVisualizardispositivos() {
+    
+        $this->layout = 'column2';
+
+        $modelfiltro = new filtro();
+
+        $model = new mensajehistorico();
+        $model = $model->obtenerPosiciones();
+
+        
+        $arrayDataProvider = new CArrayDataProvider($model , array(
+            'keyField' => 'MensajeIMEI',
+            'pagination' => false
+        ));
+        
+        $this->render('visualizardispositivos', array('arrayDataProvider' => $arrayDataProvider, 'modelfiltro' => $modelfiltro));
+
+
+    }
 }

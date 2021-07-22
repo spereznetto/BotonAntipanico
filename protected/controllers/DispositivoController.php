@@ -6,7 +6,7 @@ class DispositivoController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/column1';
 
 	/**
 	 * @return array action filters
@@ -62,16 +62,21 @@ class DispositivoController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new dispositivo;
+		
+		$model=new Dispositivo;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['dispositivo']))
+		if(isset($_POST['Dispositivo']))
 		{
-			$model->attributes=$_POST['dispositivo'];
-			if($model->save())
+			$model->attributes=$_POST['Dispositivo'];
+			if($model->save()){
 				$this->redirect(array('view','id'=>$model->IMEI));
+			}else{
+				print_r($model->getErrors());
+
+			}
 		}
 
 		$this->render('create',array(
@@ -91,9 +96,9 @@ class DispositivoController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['dispositivo']))
+		if(isset($_POST['Dispositivo']))
 		{
-			$model->attributes=$_POST['dispositivo'];
+			$model->attributes=$_POST['Dispositivo'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->IMEI));
 		}
@@ -122,7 +127,7 @@ class DispositivoController extends Controller
 	 */
 	public function actionIndex()
 	{	echo Yii::app()->user->getState('type');
-		$dataProvider=new CActiveDataProvider('dispositivo');
+		$dataProvider=new CActiveDataProvider('Dispositivo');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +138,12 @@ class DispositivoController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new dispositivo('search');
+		$this->layout = 'column2';
+
+		$model=new Dispositivo('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['dispositivo']))
-			$model->attributes=$_GET['dispositivo'];
+		if(isset($_GET['Dispositivo']))
+			$model->attributes=$_GET['Dispositivo'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,12 +154,12 @@ class DispositivoController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return dispositivo the loaded model
+	 * @return Dispositivo the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=dispositivo::model()->findByPk($id);
+		$model=Dispositivo::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -160,11 +167,11 @@ class DispositivoController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param dispositivo $model the model to be validated
+	 * @param Dispositivo $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='dispositivo-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='Dispositivo-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

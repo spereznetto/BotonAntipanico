@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View usuariofinal #<?php echo $model->idUsuarioFinal; ?></h1>
+<h3>Ver informacion del  Usuario Final Numero <?php echo $model->idUsuarioFinal; ?></h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

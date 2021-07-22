@@ -124,7 +124,7 @@ class mensajehistorico extends CActiveRecord
 		return parent::model($className);
 	}
 
-	public function obternerPosiciones($idDispMovil = null,$datos = null) {
+	public function obtenerPosiciones($idDispMovil = null,$datos = null) {
 		
 		if ($datos['desde'] != '') {
 			$hoy = $datos['hasta'];

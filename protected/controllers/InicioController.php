@@ -19,9 +19,7 @@ class InicioController extends Controller {
     public function accessRules() {
         if (!Yii::app()->user->isGuest) {
             $permisos = array(
-                'index', 'posiciones', 'detallarmovil', 
-                'vermovilevento', 'menudeusuario', 'RecorridoEnAlerta', 'detalleposicion',
-                'posicionesmobile', 'recargarposiciones', 'getPrecisionCelular'
+                'index'
                  // acceso a todos los action para los usuarios 
             );
         } else {
@@ -54,7 +52,7 @@ class InicioController extends Controller {
         $modelfiltro = new filtro();
 
         $model = new mensajehistorico();
-        $model = $model->obternerPosiciones();
+        $model = $model->obtenerPosiciones();
 
         
         $arrayDataProvider = new CArrayDataProvider($model , array(
@@ -63,6 +61,8 @@ class InicioController extends Controller {
         ));
         
         $this->render('index', array('arrayDataProvider' => $arrayDataProvider, 'modelfiltro' => $modelfiltro));
+
+
     }
     /*
         //Si le llegan por ajax los parametros filtrados que se buscan.

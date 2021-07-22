@@ -28,7 +28,7 @@ class Alerta extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('AlertaidAsignacion, estadoAlerta', 'required'),
+			array('estadoAlerta', 'required'),
 			array('AlertaidAsignacion, estadoAlerta', 'numerical', 'integerOnly'=>true),
 			array('AlertaFechaDesde, AlertaFechaHasta', 'safe'),
 			// The following rule is used by search().
@@ -101,4 +101,34 @@ class Alerta extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function obternerAlertas($idDispMovil = null,$datos = null) {
+		
+		if ($datos['desde'] != '') {
+			$hoy = $datos['hasta'];
+			$unasemana =  $datos['desde']; 
+	  
+		}else{
+			  $hoy = date("Y-m-d H:i:s");
+			  $unasemana =  date('Y-m-d H:i:s', strtotime($hoy . ' -31 day')); 
+			}	
+			
+		  // Aca el sql de un solo movil
+		  $sql = "
+		  SELECT idAlerta,UsuarioFinalNombre,AlertaFechaDesde,AlertaFechaHasta,IMEI,e.Descripcion AS AlertaEstado, f.descripcion AS tipoDispositivo
+					FROM alerta a
+					LEFT JOIN asigaciondipositivousuario b ON b.idAsignacion = a.AlertaidAsignacion AND b.asignacionfechabaja IS NULL
+					LEFT JOIN usuariofinal c ON c.idUsuarioFinal = b.AsignacionIdUsuarioFinal 
+					LEFT JOIN dispositivo d ON d.IMEI = b.AsignacionIMEI 
+					LEFT JOIN estadoalerta e ON e.idEstadoAlerta = a.estadoAlerta
+					LEFT JOIN tipodispositivo f ON d.tipoDispositivo = f.idtipoDispositivo 
+		  WHERE AlertaFechaDesde >= '".$unasemana."' AND AlertaFechaDesde <= '".$hoy."' 
+		  ORDER BY AlertaFechaDesde DESC";
+
+
+		 // echo $sql;
+		  //die;
+		  $consulta = Yii::app()->db->createCommand($sql)->queryAll();
+		  return $consulta;
+	}		  
 }

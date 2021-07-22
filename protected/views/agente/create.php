@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create agente</h1>
+<h3>Crear agente</h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -12,8 +12,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Usuariofinals</h1>
-
+<h3>Vista de Usuario Final</h3>
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',

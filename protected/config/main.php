@@ -37,7 +37,7 @@ return array(
 		'user'=>array(
 			'allowAutoLogin' => true, // habilita la autenticacion basada en cookies
             'loginUrl' => array('web/login'),
-            'returnUrl' => array('inicio/index') //Url a la que lleva al usuario luego de loguearse
+            'returnUrl' => array('mensajehistorico/visualizardispositivos') //Url a la que lleva al usuario luego de loguearse
 		),
 		'booster' => array(
             'class' => 'application.extensions.booster.components.Booster',

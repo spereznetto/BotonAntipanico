@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View AsignacionDispositivoUsuario #<?php echo $model->idAsignacion; ?></h1>
+<h3>Ver  asignacion numero <?php echo $model->idAsignacion; ?></h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

@@ -1,3 +1,4 @@
+
 <?php
 /* @var $this DispositivoController */
 /* @var $model dispositivo */
@@ -13,6 +14,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create dispositivo</h1>
+<h3>Crear dispositivo</h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

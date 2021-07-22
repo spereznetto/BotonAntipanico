@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update dispositivo <?php echo $model->IMEI; ?></h1>
+<h3>Actualizar  dispositivo <?php echo $model->IMEI; ?></h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

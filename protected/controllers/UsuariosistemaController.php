@@ -6,7 +6,7 @@ class UsuariosistemaController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/column1';
 
 	/**
 	 * @return array action filters
@@ -67,9 +67,9 @@ class UsuariosistemaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['usuariosistema']))
+		if(isset($_POST['UsuarioSistema']))
 		{
-			$model->attributes=$_POST['usuariosistema'];
+			$model->attributes=$_POST['UsuarioSistema'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idUsuario));
 		}
@@ -91,9 +91,9 @@ class UsuariosistemaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['usuariosistema']))
+		if(isset($_POST['UsuarioSistema']))
 		{
-			$model->attributes=$_POST['usuariosistema'];
+			$model->attributes=$_POST['UsuarioSistema'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idUsuario));
 		}
@@ -122,7 +122,7 @@ class UsuariosistemaController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('usuariosistema');
+		$dataProvider=new CActiveDataProvider('UsuarioSistema');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -135,8 +135,8 @@ class UsuariosistemaController extends Controller
 	{
 		$model=new usuariosistema('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['usuariosistema']))
-			$model->attributes=$_GET['usuariosistema'];
+		if(isset($_GET['UsuarioSistema']))
+			$model->attributes=$_GET['UsuarioSistema'];
 
 		$this->render('admin',array(
 			'model'=>$model,

@@ -32,7 +32,7 @@ class AlertaController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','gestionalertas'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -170,4 +170,22 @@ class AlertaController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	public function actionGestionalertas() {
+    
+        $this->layout = 'column2';
+
+        $modelfiltro = new filtro();
+
+        $model = new alerta();
+        $model = $model->obternerAlertas();
+
+        
+        $arrayAlertas = new CArrayDataProvider($model , array(
+            'keyField' => 'IdAlerta',
+            'pagination' => false
+        ));
+        
+        $this->render('index', array('arrayAlertas' => $arrayAlertas));
+    }
 }

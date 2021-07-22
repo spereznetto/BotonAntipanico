@@ -7,12 +7,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create agente', 'url'=>array('create')),
-	array('label'=>'Manage agente', 'url'=>array('admin')),
+	array('label'=>'Crear agente', 'url'=>array('create')),
+	array('label'=>'Administrar agente', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Agentes</h1>
+<h3>Agentes</h3>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

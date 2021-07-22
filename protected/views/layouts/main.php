@@ -44,40 +44,31 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-          `    <li class="dropdown" style="">
+              <li class="waves-effect waves-light">
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('alerta/gestionalertas') ?>" role="button" aria-haspopup="true" ><i class='fa fa-bullhorn'></i>Gestion Alertas</a>
+              </li>
+              <li class="waves-effect waves-light">
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('mensajehistorico/visualizardispositivos') ?>" role="button" aria-haspopup="true" ><i class='fa fa-clipboard'></i>Visualizar Dispositivos</a>
+              </li>
+               <li class="waves-effect waves-light">
                       <a href="<?php echo Yii::app()->CreateAbsoluteUrl('dispositivo/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-mobile'></i> Dispositivos</a>
               </li>
-              <li class="dropdown" style="">
-                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('mensajehistorico/vermensajes') ?>" role="button" aria-haspopup="true" ><i class='fa fa-world'></i> Ver Mensajes</a>
-              </li>
-              <li class="dropdown" style="">
+              <li class="waves-effect waves-light">
                       <a href="<?php echo Yii::app()->CreateAbsoluteUrl('usuariofinal/admin') ?>" role="button" aria-haspopup="true"><i class='fa fa-address-card'></i> Usuario Final</a>
               </li>
-              <li class="dropdown" style="">
+              <li class="waves-effect waves-light">
                       <a href="<?php echo Yii::app()->CreateAbsoluteUrl('asignaciondispositivousuario/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-address-book'></i>Asignacion Usuarios a Dispositivos</a>
               </li>
-              <li class="dropdown" style="">
-                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('agente/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-clipboard'></i>Informes</a>
+              <li class="waves-effect waves-light">
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('agente/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-knight'></i>Agentes</a>
               </li>
-              <li class="dropdown" style="">
+              <li class="waves-effect waves-light">
                       <a href="<?php echo Yii::app()->CreateAbsoluteUrl('usuariosistema/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-user'></i>Usuario Sistema</a>
               </li>
-              
+                <li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('web/logout') ?>"><span><?php echo Yii::app()->user->name; ?></span>  <br>(Cerrar Sesion)</a></li>
           </ul>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='fa fa-user'></i> <span><?php echo Yii::app()->user->name; ?></span> <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('usuario/datos') ?>">Datos de Usuario</a></li>
-                <li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('usuario/cambiarcontrasena') ?>">Cambio de Password</a></li>
-                <li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('web/logout') ?>">Cerrar Sesion</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
+   
       </div><!-- /.container-fluid -->
     </nav>
     <!--End Nav-->

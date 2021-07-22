@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View dispositivo #<?php echo $model->IMEI; ?></h1>
+<h3>Ver informacion del dispositivo con IMEI numero<?php echo $model->IMEI; ?></h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

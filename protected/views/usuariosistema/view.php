@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View usuariosistema #<?php echo $model->idUsuario; ?></h1>
+<h3>Ver informacion de usuario  de sistema numero <?php echo $model->idUsuario; ?></h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
