@@ -1,0 +1,7 @@
+.mdc-checkbox__checkmark__path {
+    stroke: var(--color-texto1) !important;
+}
+
+.oculto {
+    display: none;
+}

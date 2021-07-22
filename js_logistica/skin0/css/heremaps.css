@@ -1,0 +1,196 @@
+div[name="instruccion_texto"] span {
+    padding-left: 4px;
+    padding-right: 4px;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+div[name="instruccion_icono"] span.arrow {
+    display: inline-block;
+    min-width: 28px;
+    min-height: 28px;
+    background-position: 0px;
+    background-image: url("../../../images/arrows/arrows.png");
+    position: relative;
+}
+
+div[name="instruccion_icono"] span.depart {
+    background-position: -28px;
+}
+
+div[name="instruccion_icono"] span.rightUTurn {
+    background-position: -56px;
+}
+
+div[name="instruccion_icono"] span.leftUTurn {
+    background-position: -84px;
+}
+
+div[name="instruccion_icono"] span.rightFork {
+    background-position: -112px;
+}
+
+div[name="instruccion_icono"] span.leftFork {
+    background-position: -140px;
+}
+
+div[name="instruccion_icono"] span.rightMerge {
+    background-position: -112px;
+}
+
+div[name="instruccion_icono"] span.leftMerge {
+    background-position: -140px;
+}
+
+div[name="instruccion_icono"] span.slightRightTurn {
+    background-position: -168px;
+}
+
+div[name="instruccion_icono"] span.slightLeftTurn {
+    background-position: -196px;
+}
+
+div[name="instruccion_icono"] span.rightTurn {
+    background-position: -224px;
+}
+
+div[name="instruccion_icono"] span.leftTurn {
+    background-position: -252px;
+}
+
+div[name="instruccion_icono"] span.sharpRightTurn {
+    background-position: -280px;
+}
+
+div[name="instruccion_icono"] span.sharpLeftTurn {
+    background-position: -308px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit1 {
+    background-position: -616px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit2 {
+    background-position: -644px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit3 {
+    background-position: -672px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit4 {
+    background-position: -700px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutPass {
+    background-position: -700px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit5 {
+    background-position: -728px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit6 {
+    background-position: -756px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit7 {
+    background-position: -784px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit8 {
+    background-position: -812px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit9 {
+    background-position: -840px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit10 {
+    background-position: -868px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit11 {
+    background-position: 896px;
+}
+
+div[name="instruccion_icono"] span.rightRoundaboutExit12 {
+    background-position: 924px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit1 {
+    background-position: -952px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit2 {
+    background-position: -980px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit3 {
+    background-position: -1008px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit4 {
+    background-position: -1036px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutPass {
+    background-position: 1036px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit5 {
+    background-position: -1064px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit6 {
+    background-position: -1092px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit7 {
+    background-position: -1120px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit8 {
+    background-position: -1148px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit9 {
+    background-position: -1176px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit10 {
+    background-position: -1204px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit11 {
+    background-position: -1232px;
+}
+
+div[name="instruccion_icono"] span.leftRoundaboutExit12 {
+    background-position: -1260px;
+}
+
+div[name="instruccion_icono"] span.arrive {
+    background-position: -1288px;
+}
+
+div[name="instruccion_icono"] span.leftRamp {
+    background-position: -392px;
+}
+
+div[name="instruccion_icono"] span.rightRamp {
+    background-position: -420px;
+}
+
+div[name="instruccion_icono"] span.leftExit {
+    background-position: -448px;
+}
+
+div[name="instruccion_icono"] span.rightExit {
+    background-position: -476px;
+}
+
+div[name="instruccion_icono"] span.ferry {
+    background-position: -1316px;
+}

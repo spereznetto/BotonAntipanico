@@ -1,0 +1,422 @@
+/********************************************
+************** BOTON COLLAPSE ***************
+*********************************************/
+
+.listado-item-boton-colapsable {
+    margin-right: 4px;
+}
+
+.tcon {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 20px;
+    transition: 0.15s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 20px;
+    background: transparent;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tcon>* {
+    display: block;
+}
+
+.tcon:hover,
+.tcon:focus {
+    outline: none;
+}
+
+.tcon::-moz-focus-inner {
+    border: 0;
+}
+
+.tcon-menu__lines {
+    display: inline-block;
+    height: 2.5px;
+    width: 20px;
+    border-radius: 2.85714px;
+    transition: 0.15s;
+    background: #3382ca;
+    position: relative;
+}
+
+.tcon-menu__lines::before,
+.tcon-menu__lines::after {
+    display: inline-block;
+    height: 2.5px;
+    width: 20px;
+    border-radius: 2.85714px;
+    transition: 0.15s;
+    background: #3382ca;
+    content: '';
+    position: absolute;
+    left: 0;
+    transform-origin: 2.85714px center;
+    width: 100%;
+}
+
+.tcon-menu__lines::before {
+    top: 5px;
+}
+
+.tcon-menu__lines::after {
+    top: -5px;
+}
+
+.tcon-transform .tcon-menu__lines {
+    transform: scale3d(0.8, 0.8, 0.8);
+}
+
+.tcon-menu--xbutterfly {
+    width: auto;
+}
+
+.tcon-menu--xbutterfly .tcon-menu__lines::before,
+.tcon-menu--xbutterfly .tcon-menu__lines::after {
+    transform-origin: 50% 50%;
+    transition: top .15s .3s ease, transform .15s ease;
+}
+
+.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines {
+    background: transparent;
+}
+
+.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before,
+.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {
+    top: 0;
+    transition: top .15s ease, transform .15s .3s ease;
+    width: 20px;
+}
+
+.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before {
+    transform: rotate3d(0, 0, 1, 45deg);
+    background: #3382ca;
+}
+
+.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {
+    transform: rotate3d(0, 0, 1, -45deg);
+    background: #3382ca;
+}
+
+.tcon:not([class~="tcon-transform"]):hover .tcon-menu__lines,
+.tcon:hover>.tcon-menu__lines::before,
+.tcon:hover>.tcon-menu__lines::after {
+    background: #303030;
+}
+
+.tcon-visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.tcon-visuallyhidden:active,
+.tcon-visuallyhidden:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/********************************************
+************** BOTON REMOVER ****************
+*********************************************/
+
+.tcon-plus {
+    height: 16px;
+    position: relative;
+    transform: scale(0.75);
+    width: 30px;
+}
+
+.tcon-plus::before,
+.tcon-plus::after {
+    content: "";
+    border-radius: 2px;
+    display: block;
+    width: 85%;
+    height: 25%;
+    position: absolute;
+    top: 37%;
+    left: 8%;
+    transition: 0.3s;
+    background: white;
+}
+
+.tcon-plus:after {
+    transform: rotate(90deg);
+}
+
+.tcon-plus--minus.tcon-transform::before {
+    transform: rotate(180deg) translate(0, 0);
+    width: 62%;
+}
+
+.tcon-plus--minus.tcon-transform::after {
+    transform: rotate(-180deg) translate(-37.5%, 0);
+    width: 62%;
+}
+
+.tcon-visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.tcon-visuallyhidden:active,
+.tcon-visuallyhidden:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/********************************************
+************** BOTON OCULTAR ****************
+*********************************************/
+
+button[name="btn-ocultar"].tcon {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 22px;
+    transition: 0.3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 26px;
+    background: transparent;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button[name="btn-ocultar"] .tcon-menu__lines {
+    display: inline-block;
+    height: 4px;
+    width: 26px;
+    border-radius: 2.85714px;
+    transition: 0.3s;
+    background: #505050;
+    position: relative;
+}
+
+button[name="btn-ocultar"] .tcon-menu__lines::before,
+button[name="btn-ocultar"] .tcon-menu__lines::after {
+    display: inline-block;
+    height: 4px;
+    width: 26px;
+    border-radius: 2.85714px;
+    transition: 0.3s;
+    background: #505050;
+    content: '';
+    position: absolute;
+    left: 0;
+    transform-origin: 2.85714px center;
+    width: 100%;
+}
+
+button[name="btn-ocultar"] .tcon-menu__lines::before {
+    top: 7px;
+}
+
+button[name="btn-ocultar"] .tcon-menu__lines::after {
+    top: -7px;
+}
+
+button[name="btn-ocultar"] .tcon-transform .tcon-menu__lines {
+    transform: scale3d(0.8, 0.8, 0.8);
+}
+
+button[name="btn-ocultar"].tcon-menu--arrow,
+button[name="btn-ocultar"].tcon-menu--arrowleft {
+    width: auto;
+}
+
+button[name="btn-ocultar"].tcon-menu--arrow.tcon-transform .tcon-menu__lines::before,
+button[name="btn-ocultar"].tcon-transform.tcon-menu--arrowleft .tcon-menu__lines::before,
+button[name="btn-ocultar"].tcon-menu--arrow.tcon-transform .tcon-menu__lines::after,
+button[name="btn-ocultar"].tcon-transform.tcon-menu--arrowleft .tcon-menu__lines::after {
+    top: 0;
+    width: 14px;
+}
+
+button[name="btn-ocultar"].tcon-menu--arrow.tcon-transform .tcon-menu__lines::before,
+button[name="btn-ocultar"].tcon-transform.tcon-menu--arrowleft .tcon-menu__lines::before {
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+
+button[name="btn-ocultar"].tcon-menu--arrow.tcon-transform .tcon-menu__lines::after,
+button[name="btn-ocultar"].tcon-transform.tcon-menu--arrowleft .tcon-menu__lines::after {
+    transform: rotate3d(0, 0, 1, -45deg);
+}
+
+button[name="btn-ocultar"] .tcon-visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+button[name="btn-ocultar"] .tcon-visuallyhidden:active,
+button[name="btn-ocultar"] .tcon-visuallyhidden:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/********************************************
+************** BOTON FILTROS ****************
+*********************************************/
+
+button[name="btn-filtros-toggle"].tcon {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 30px;
+    transition: 0.3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 30px;
+    background: transparent;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button[name="btn-filtros-toggle"].tcon>* {
+    display: block;
+}
+
+button[name="btn-filtros-toggle"].tcon:hover,
+button[name="btn-filtros-toggle"].tcon:focus {
+    outline: none;
+}
+
+button[name="btn-filtros-toggle"].tcon::-moz-focus-inner {
+    border: 0;
+}
+
+button[name="btn-filtros-toggle"].tcon-remove {
+    height: 30px;
+    position: relative;
+    transform: scale(0.75);
+    width: 30px;
+}
+
+button[name="btn-filtros-toggle"].tcon-remove::before,
+button[name="btn-filtros-toggle"].tcon-remove::after {
+    content: "";
+    display: block;
+    height: 25%;
+    width: 85%;
+    position: absolute;
+    top: 37%;
+    left: 8%;
+    transition: 0.3s;
+    background: #3382ca;
+}
+
+button[name="btn-filtros-toggle"]:hover.tcon-remove::before,
+button[name="btn-filtros-toggle"]:hover.tcon-remove::after {
+    background: #505050;
+}
+
+button[name="btn-filtros-toggle"].tcon-remove::before {
+    transform: rotate(45deg);
+}
+
+button[name="btn-filtros-toggle"].tcon-remove::after {
+    transform: rotate(-45deg);
+}
+
+button[name="btn-filtros-toggle"].tcon-remove--chevron-down.tcon-transform::before {
+    left: 5%;
+    transform: rotate(-135deg);
+    width: 59%;
+}
+
+button[name="btn-filtros-toggle"].tcon-remove--chevron-down.tcon-transform::after {
+    left: auto;
+    right: 10%;
+    transform: rotate(135deg);
+    width: 60%;
+}
+
+button[name="btn-filtros-toggle"] .tcon-visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+button[name="btn-filtros-toggle"] .tcon-visuallyhidden:active,
+button[name="btn-filtros-toggle"] .tcon-visuallyhidden:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}

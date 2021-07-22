@@ -1,0 +1,26 @@
+/*
+* SCROLL FUNCIONA EN CHROME
+*/
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(200, 200, 200, 0.1);
+    box-shadow: inset 0 0 6px rgba(200, 200, 200, 0.1);
+    border-radius: 2px;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(100, 100, 100, 0.2);
+}

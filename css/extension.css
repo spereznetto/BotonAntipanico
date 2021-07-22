@@ -1,0 +1,27 @@
+body{
+	padding:5px !important;
+	background:#222!important;
+}
+
+#leftPanel{
+	/*min-width:350px !important; */
+}
+
+#controles-menu-mapa{
+	/*width:100%;*/
+	/*min-width:350px;*/
+	height:45px;
+	padding:5px;	
+}
+
+#controles-menu-mapa button {
+	margin:5px;	
+}
+
+
+
+.loading{ 
+	width: 179px;
+	height: 21px;
+	background:url('../images/cargando.gif')
+}

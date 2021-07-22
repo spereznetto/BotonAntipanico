@@ -1,0 +1,100 @@
+/* ACTIVAR/DESACTIVAR UN PANEL */
+
+.panel {
+    display: none!important;
+    flex-direction: column;
+}
+
+.panel.active {
+    display: flex!important;
+}
+
+
+/* PANEL PRIMARIO */
+
+
+/* shadow */
+
+.panel-shadow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* panel */
+
+div[name="panel-primario--parent"] {
+    background-color: var(--color-fondo1);
+    border-radius: 2px;
+    position: relative;
+    top: 24px;
+    left: 10px;
+    width: calc(100% - 20px);
+    min-height: 200px;
+    height: auto;
+    z-index: 2;
+}
+
+div[name="panel-primario--parent"] .panel-content-body {
+    overflow-y: auto;
+}
+
+div[name="panel-primario"] {
+    color: var(--color-texto1);
+    background-color: var(--color-acentuado);
+    height: 50px;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div[name="panel-primario"]:hover {
+    cursor: default;
+}
+
+div[name="panel-primario"]>button {
+    color: var(--color-texto1);
+}
+
+
+/* PANEL SECUNDARIO DE CARGA */
+
+.panel-secundario {
+    height: auto;
+    width: auto;
+    min-width: 280px;
+    background-color: var(--color-fondo1);
+    right: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.panel-secundario-content {
+    max-width: 480px;
+    width: auto;
+    opacity: 0;
+}
+
+.panel-secundario-header,
+.panel-secundario-body {
+    padding-left: 8px;
+}
+
+.panel-secundario-header {
+    border-bottom: 2px solid var(--color-acentuado);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-secundario-header>h1 {
+    margin: 8px 0px;
+    cursor: default;
+}
+
+.panel-secundario-body {
+    overflow-y: auto;
+}

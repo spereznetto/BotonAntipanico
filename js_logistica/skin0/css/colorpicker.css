@@ -1,0 +1,134 @@
+/* PALETA DE  COLORES */
+
+.color-picker--parent {
+    margin: 0 auto;
+    width: 26%;
+}
+
+.color-picker {
+    background-color: #8a9296;
+    padding: 0 !important;
+    height: auto;
+    padding-bottom: 8px !important;
+}
+
+.color-picker-titulo-text {
+    color: var(--color-texto1);
+}
+
+.color-picker-cell {
+    padding: 4px;
+    color: var(--color-texto1);
+    font-size: 1em;
+    min-height: 40px;
+}
+
+.color-picker-cell.active {
+    transform: scale(0.8);
+}
+
+.color-picker-cell {
+    transition: all .2s ease-in-out;
+}
+
+.color-picker-cell:hover {
+    transform: scale(0.85);
+    cursor: pointer;
+}
+
+.color-picker .dimensiones-celda-color {
+    min-height: 16px;
+    width: 18px;
+}
+
+/* COLOR TEXTO */
+
+.color-picker-texto--parent {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.color-picker-texto {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 100px;
+    padding: 10px;
+}
+
+.color-picker-texto--opcion {
+    display: flex;
+    flex: 1 1 auto;
+    height: 30px;
+    max-height: 140px;
+    margin: 8px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+.color-picker-texto--opcion.blanco {
+    background-color: black;
+    color: white;
+}
+
+.color-picker-texto--opcion.negro {
+    background-color: white;
+    color: black;
+}
+
+.color-picker-texto--opcion:hover {
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(0.8);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(0.8);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(0.8);
+    transition: all 200ms ease-in;
+    transform: scale(0.8);
+}
+
+/* COLOR DIV SELECCIONAR */
+
+.div-color-parent {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    margin: 4px 14px;
+}
+
+.div-color-opcion {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.25s;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px 1px #000000bf;
+}
+
+.div-color-opcion:hover {
+    transform: scale(1.5) rotate(0.01deg);
+}
+
+.div-color-opcion.activada {
+    animation: scalarColor 0.2s forwards;
+}
+
+@keyframes scalarColor {
+    100% {
+        transform: scale(1.3);
+    }
+}

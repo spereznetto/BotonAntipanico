@@ -1,0 +1,22 @@
+.noUi-connect,
+.mdc-slider__track {
+    background: var(--color-secundario);
+}
+
+.mdc-slider__thumb {
+    fill: var(--color-secundario);
+    stroke: var(--color-secundario);
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+    background: transparent!important;
+}
+
+.noUi-value {
+    color: #303030;
+}
+
+.noUi-value-horizontal {
+    transform: translate(-50%, 50%)!important;
+}

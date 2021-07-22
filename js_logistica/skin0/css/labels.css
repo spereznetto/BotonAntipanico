@@ -1,0 +1,31 @@
+/*
+* PARA LOS LABEL DE MOSTRAR EN EL MAPA
+*/
+
+label[name="label-para-mdc-checkbox-trigger-click"] {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+label[name="label-para-mdc-checkbox-trigger-click"]:hover {
+    cursor: pointer;
+    color: #3382ca;
+}
+
+label[name="label-para-mdc-checkbox-trigger-click"]:active {
+    color: var(--color-acentuado);
+}
+
+
+/*
+* LABEL QUE HABILITAN EL PANEL SECUNDARIO
+*/
+
+label[name="label-habilitar-secundario"]:hover {
+    cursor: pointer;
+    color: #3382ca;
+}

@@ -1,0 +1,60 @@
+/*
+* TOOLBAR PRINCIPAL
+*/
+
+.toolbar-custom {
+    height: 40px!important;
+}
+
+.mdc-toolbar__row {
+    min-height: 40px!important;
+}
+
+
+/* BOTON MENU DERECHO ABRIR/CERRAR */
+
+#abrir-menu-derecho {
+    outline: none;
+    color: var(--color-texto1);
+}
+
+
+/* BARRA INDICADORA DE TAB ACTIVO */
+
+.mdc-tab-bar__indicator {
+    top: 40px!important;
+}
+
+.toolbar-indicador {
+    background: var(--color-texto1)!important;
+}
+
+
+/* OPCIONES */
+
+.toolbar-opcion {
+    color: var(--color-texto1)!important;
+}
+
+
+/* NOMBRE USUARIO */
+
+.toolbar-nombre-usuario {
+    margin: 0 16px;
+    cursor: default;
+    color: var(--color-texto1);
+}
+
+
+/* NOTIFICACIONES ICONO */
+
+.toolbar-notificaciones-icono {
+    color: var(--color-texto1);
+}
+
+
+/* MENU DERECHO BOTON */
+
+#menu-derecho-button {
+    color: var(--color-texto1);
+}

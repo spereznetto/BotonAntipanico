@@ -1,0 +1,146 @@
+/* PANEL DE NOTIFICACIONES */
+
+#panel-notificaciones.cerrado {
+    display: none;
+}
+
+#panel-notificaciones.abierto {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 46px;
+    right: 39px;
+    height: auto;
+    min-height: 100px;
+    min-width: 332px;
+    max-height: 460px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+#panel-notificaciones.abierto>.arrow {
+    display: block;
+    position: absolute;
+    top: -16px;
+    right: 11px;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid var(--color-acentuado);
+}
+
+#panel-notificaciones.abierto>.header {
+    display: flex;
+    height: 30px;
+    background-color: var(--color-acentuado);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: space-between;
+}
+
+#panel-notificaciones.abierto>.header>h2 {
+    margin: 3px 8px;
+    display: flex;
+    color: var(--color-texto1);
+    cursor: default;
+}
+
+#panel-notificaciones.abierto>.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 320px;
+    background-color: var(--color-fondo1);
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#panel-notificaciones.abierto>.body>.loadingSVG {
+    display: flex;
+}
+
+#panel-notificaciones .body #notificaciones-listado {
+    display: flex;
+    flex-direction: column;
+    flex: 2 2 160px;
+    width: 100%;
+    padding: 0;
+    overflow-y: auto;
+}
+
+#panel-notificaciones .body #notificaciones-listado li {
+    /* NO USAR el atributo DISPLAY aca ya que se modifica por jquery */
+    margin: 2px 5px;
+    flex-direction: row;
+    flex: 0 0 auto;
+    align-items: stretch;
+    height: fit-content!important;
+}
+
+.notificacion-titulo {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    line-height: 22px;
+    padding-left: 8px;
+    color: #000000;
+    padding-top: 2px;
+    border-bottom: 1px solid #a2a2a2;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 22px;
+}
+
+.notificacion-mensaje {
+    display: flex;
+    color: #535353;
+    max-width: 250px;
+    padding: 2px 8px;
+    overflow-y: auto;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+}
+
+#boton-buscar-notificaciones {
+    color: var(--color-texto1);
+}
+
+#boton-buscar-notificaciones.activado {
+    -webkit-animation: spin 3.4s linear infinite;
+    -moz-animation: spin 3.4s linear infinite;
+    animation: spin 3.4s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.sin-notificaciones {
+    display: flex;
+    flex: 3 3 auto;
+    width: calc(100% - 8px);
+    height: calc(100% - 10px)!important;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}

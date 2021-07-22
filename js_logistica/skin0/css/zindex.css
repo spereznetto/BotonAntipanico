@@ -1,0 +1,14 @@
+/*
+* DIALOGS
+*/
+
+.mdc-dialog {
+    z-index: 6;
+}
+
+
+/* CELDA IZQUIERDA */
+
+div[name="celda-izquierda"] {
+    z-index: 4;
+}

@@ -1,0 +1,106 @@
+/* TOOLTIPSTER */
+
+.tooltipster-content {
+    font-size: 12px;
+}
+
+.tooltip_templates {
+    display: none;
+}
+
+
+/* RECORRIDO */
+
+.tooltip-recorrido-estado-container {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tooltip-recorrido-estado-container>.titulo {
+    font-size: 15px;
+}
+
+.tooltip-recorrido-estado-container>.separador {
+    background-color: var(--color-primario);
+    height: 2px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.tooltip-recorrido-estado-container>.datos-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.tooltip-recorrido-estado-container>.datos-container>.datos-titulo,
+.tooltip-recorrido-estado-container>.datos-container>.datos-valores {
+    display: flex;
+}
+
+.tooltip-recorrido-estado-container>.datos-container>.datos-titulo>i {
+    font-size: 16px;
+}
+
+.tooltip-recorrido-estado-container>.datos-container>.datos-titulo>span {
+    margin-left: 6px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.tooltip-recorrido-estado-container>.datos-container>.datos-valores,
+.tooltip-recorrido-estado-container>.datos-container>.datos-valores-col {
+    padding-left: 24px;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+
+.tooltip-recorrido-estado-container>.datos-container>.datos-valores-col {
+    flex-direction: column;
+}
+
+.tooltip-recorrido-estado-container>.datos-container>.datos-valores>span.descripcion,
+.tooltip-recorrido-estado-container>.datos-container span.descripcion-izq {
+    font-size: 11px;
+}
+
+.tooltip-recorrido-estado-container>.datos-container span.descripcion-izq {
+    font-weight: 800;
+}
+
+.tooltip-recorrido-estado-container>.datos-container>.datos-valores>span.valor {
+    font-weight: 700;
+    font-size: 11px;
+    padding-left: 6px;
+    width: 100%;
+    text-align: end;
+}
+
+.tooltip-recorrido-estado-container>div[name="dias"]>.dia-repeticion-container {
+    display: none;
+    justify-content: space-between;
+    margin-top: 2px;
+    padding-left: 26px;
+}
+
+.tooltip-recorrido-estado-container>div[name="dias"]>.dia-repeticion-container.activada {
+    display: flex;
+}
+
+.tooltip-recorrido-estado-container>div[name="dias"]>.dia-repeticion-container>.dia-repeticion {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    font-weight: 700;
+}
+
+.tooltip-recorrido-estado-container>div[name="dias"]>.dia-repeticion-container>.dia-repeticion.activo {
+    color: var(--color-texto1);
+    background-color: var(--color-secundario);
+}

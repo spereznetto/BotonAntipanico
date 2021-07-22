@@ -1,0 +1,48 @@
+body {
+    height: 100%;
+    margin: 0px;
+    background-color: var(--color-fondo1);
+}
+
+
+/* MODULOS */
+
+div[name="modulo-container"] {
+    height: calc(100% - 40px);
+    left: 0;
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+div[name="modulo_mapa"] {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+/* INPUTS EN LOS FORMULARIOS DE CARGA */
+
+.input-block {
+    margin-top: 10px;
+    display: grid;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.input-block-center {
+    margin: auto;
+    width: 100%;
+}
+
+.input-block-center>div {
+    width: 100%!important;
+}

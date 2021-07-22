@@ -1,0 +1,1675 @@
+2021/07/12 03:11:01 [error] [php] count(): Parameter must be an array or an object that implements Countable (E:\Dropbox\htdocs\framework\gii\generators\model\ModelCode.php:371)
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\gii\CCodeGenerator.php(162): ModelCode->prepare()
+#1 E:\Dropbox\htdocs\framework\gii\CCodeGenerator.php(63): ModelGenerator->prepare()
+#2 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): ModelGenerator->actionIndex()
+#3 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\Dropbox\htdocs\framework\web\CController.php(286): ModelGenerator->runAction()
+#5 E:\Dropbox\htdocs\framework\web\CController.php(265): ModelGenerator->runActionWithFilters()
+#6 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): ModelGenerator->run()
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CWebApplication->run()
+REQUEST_URI=/BotonAntipanico/index.php?r=gii/model/index
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/12 03:11:18 [error] [php] count(): Parameter must be an array or an object that implements Countable (E:\Dropbox\htdocs\framework\gii\generators\model\ModelCode.php:371)
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\gii\CCodeGenerator.php(162): ModelCode->prepare()
+#1 E:\Dropbox\htdocs\framework\gii\CCodeGenerator.php(63): ModelGenerator->prepare()
+#2 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): ModelGenerator->actionIndex()
+#3 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\Dropbox\htdocs\framework\web\CController.php(286): ModelGenerator->runAction()
+#5 E:\Dropbox\htdocs\framework\web\CController.php(265): ModelGenerator->runActionWithFilters()
+#6 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): ModelGenerator->run()
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CWebApplication->run()
+REQUEST_URI=/BotonAntipanico/index.php?r=gii/model/index
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/12 04:20:41 [error] [php] count(): Parameter must be an array or an object that implements Countable (E:\Dropbox\htdocs\framework\gii\generators\model\ModelCode.php:371)
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\gii\CCodeGenerator.php(162): ModelCode->prepare()
+#1 E:\Dropbox\htdocs\framework\gii\CCodeGenerator.php(63): ModelGenerator->prepare()
+#2 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): ModelGenerator->actionIndex()
+#3 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\Dropbox\htdocs\framework\web\CController.php(286): ModelGenerator->runAction()
+#5 E:\Dropbox\htdocs\framework\web\CController.php(265): ModelGenerator->runActionWithFilters()
+#6 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): ModelGenerator->run()
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CWebApplication->run()
+REQUEST_URI=/BotonAntipanico/index.php?r=gii/model/index
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/14 05:06:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gps_efip.asignaciondispositivousuario' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `asignaciondispositivousuario`.
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/14 05:06:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gps_efip.asignaciondispositivousuario' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `asignaciondispositivousuario`.
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/17 20:57:20 [error] [exception.CException] CException: WebController cannot find the requested view "login". in E:\Dropbox\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\WebController.php(67): CController->render('login', Array)
+#2 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): WebController->actionLogin()
+#3 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Dropbox\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('web/login')
+#8 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 20:58:09 [error] [exception.CException] CException: Alias "booster.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file. in E:\Dropbox\htdocs\framework\YiiBase.php:347
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(WebController), 'booster.widgets...', Array)
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(189): CBaseController->createWidget('booster.widgets...', Array)
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\views\web\login.php(4): CBaseController->beginWidget('booster.widgets...', Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#5 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#7 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\WebController.php(67): CController->render('login', Array)
+#9 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): WebController->actionLogin()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('web/login')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 20:59:29 [error] [exception.CException] CException: Alias "booster.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file. in E:\Dropbox\htdocs\framework\YiiBase.php:347
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(WebController), 'booster.widgets...', Array)
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(189): CBaseController->createWidget('booster.widgets...', Array)
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\views\web\login.php(4): CBaseController->beginWidget('booster.widgets...', Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#5 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#7 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\WebController.php(67): CController->render('login', Array)
+#9 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): WebController->actionLogin()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('web/login')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 21:09:20 [error] [exception.CException] CException: Alias "booster.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file. in E:\Dropbox\htdocs\framework\YiiBase.php:347
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(WebController), 'booster.widgets...', Array)
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(189): CBaseController->createWidget('booster.widgets...', Array)
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\views\web\login.php(4): CBaseController->beginWidget('booster.widgets...', Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#5 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#7 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\WebController.php(67): CController->render('login', Array)
+#9 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): WebController->actionLogin()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('web/login')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 21:09:39 [error] [exception.CException] CException: Alias "booster.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file. in E:\Dropbox\htdocs\framework\YiiBase.php:347
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(WebController), 'booster.widgets...', Array)
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(189): CBaseController->createWidget('booster.widgets...', Array)
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\views\web\login.php(4): CBaseController->beginWidget('booster.widgets...', Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#5 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#7 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\WebController.php(67): CController->render('login', Array)
+#9 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): WebController->actionLogin()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('web/login')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 21:10:03 [error] [exception.CException] CException: Alias "booster.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file. in E:\Dropbox\htdocs\framework\YiiBase.php:347
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(WebController), 'booster.widgets...', Array)
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(189): CBaseController->createWidget('booster.widgets...', Array)
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\views\web\login.php(4): CBaseController->beginWidget('booster.widgets...', Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#5 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#7 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\WebController.php(67): CController->render('login', Array)
+#9 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): WebController->actionLogin()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('web/login')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 21:11:38 [error] [exception.CException] CException: Alias "booster.widgets.TbButton" is invalid. Make sure it points to an existing directory or file. in E:\Dropbox\htdocs\framework\YiiBase.php:347
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(WebController), 'booster.widgets...', Array)
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\views\web\login.php(32): CBaseController->widget('booster.widgets...', Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#5 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#7 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\WebController.php(67): CController->render('login', Array)
+#9 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): WebController->actionLogin()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('web/login')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 21:12:28 [error] [exception.CException] CException: Alias "booster.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file. in E:\Dropbox\htdocs\framework\YiiBase.php:347
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(WebController), 'booster.widgets...', Array)
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(189): CBaseController->createWidget('booster.widgets...', Array)
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\views\web\login.php(4): CBaseController->beginWidget('booster.widgets...', Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#5 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#7 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\WebController.php(67): CController->render('login', Array)
+#9 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): WebController->actionLogin()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('web/login')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 21:15:56 [error] [exception.CException] CException: Alias "booster.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file. in E:\Dropbox\htdocs\framework\YiiBase.php:347
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(WebController), 'booster.widgets...', Array)
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(189): CBaseController->createWidget('booster.widgets...', Array)
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\views\web\login.php(4): CBaseController->beginWidget('booster.widgets...', Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#5 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#7 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\WebController.php(67): CController->render('login', Array)
+#9 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): WebController->actionLogin()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('web/login')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 21:15:58 [error] [exception.CException] CException: Alias "booster.widgets.TbActiveForm" is invalid. Make sure it points to an existing directory or file. in E:\Dropbox\htdocs\framework\YiiBase.php:347
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(WebController), 'booster.widgets...', Array)
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(189): CBaseController->createWidget('booster.widgets...', Array)
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\views\web\login.php(4): CBaseController->beginWidget('booster.widgets...', Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#5 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#7 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\WebController.php(67): CController->render('login', Array)
+#9 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): WebController->actionLogin()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('web/login')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 16:41:33 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "inicio/index". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('inicio/index')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=inicio/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 16:43:05 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "inicio/index". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('inicio/index')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=inicio/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 16:44:05 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "inicio/index". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('inicio/index')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=inicio/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 21:44:13 [error] [exception.CException] CException: Property "UsuarioSistema.UsuariootipoUsuario" is not defined. in E:\Dropbox\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('UsuariootipoUsu...')
+#1 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\_view.php(13): CActiveRecord->__get('UsuariootipoUsu...')
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(130): require('E:\\Dropbox\\htdo...')
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, false)
+#4 E:\Dropbox\htdocs\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array)
+#5 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#9 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#12 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#13 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#14 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\UsuariosistemaController.php(127): CController->render('index', Array)
+#16 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): UsuariosistemaController->actionIndex()
+#17 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#26 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariosistema/...')
+#27 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariosistema/index
+---
+2021/07/17 21:45:18 [error] [exception.CException] CException: Property "UsuarioSistema.UsuariootipoUsuario" is not defined. in E:\Dropbox\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('UsuariootipoUsu...')
+#1 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\_view.php(13): CActiveRecord->__get('UsuariootipoUsu...')
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(130): require('E:\\Dropbox\\htdo...')
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, false)
+#4 E:\Dropbox\htdocs\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array)
+#5 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#9 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#12 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#13 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#14 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\UsuariosistemaController.php(127): CController->render('index', Array)
+#16 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): UsuariosistemaController->actionIndex()
+#17 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#26 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariosistema/...')
+#27 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariosistema/index
+---
+2021/07/17 21:45:59 [error] [exception.CException] CException: Property "UsuarioSistema.UsuariootipoUsuario" is not defined. in E:\Dropbox\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('UsuariootipoUsu...')
+#1 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\_view.php(13): CActiveRecord->__get('UsuariootipoUsu...')
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(130): require('E:\\Dropbox\\htdo...')
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, false)
+#4 E:\Dropbox\htdocs\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array)
+#5 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#9 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#12 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#13 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#14 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\UsuariosistemaController.php(127): CController->render('index', Array)
+#16 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): UsuariosistemaController->actionIndex()
+#17 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#26 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariosistema/...')
+#27 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariosistema/index
+---
+2021/07/17 21:46:30 [error] [exception.CException] CException: Property "UsuarioSistema.UsuariootipoUsuario" is not defined. in E:\Dropbox\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('UsuariootipoUsu...')
+#1 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\_view.php(13): CActiveRecord->__get('UsuariootipoUsu...')
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(130): require('E:\\Dropbox\\htdo...')
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, false)
+#4 E:\Dropbox\htdocs\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array)
+#5 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#9 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#12 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#13 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#14 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\UsuariosistemaController.php(127): CController->render('index', Array)
+#16 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): UsuariosistemaController->actionIndex()
+#17 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#26 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariosistema/...')
+#27 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariosistema/index
+---
+2021/07/17 16:46:51 [error] [exception.CException] CException: UsuariosistemaController cannot find the requested view "application.views.alertas._modalUltimasAlertas". in E:\Dropbox\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 E:\Dropbox\htdocs\BotonAntipanico\protected\views\layouts\main.php(413): CController->renderPartial('application.vie...')
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#3 E:\Dropbox\htdocs\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#4 E:\Dropbox\htdocs\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('\t\r\n\n<h1>Usuario...')
+#5 E:\Dropbox\htdocs\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('\t\r\n\n<h1>Usuario...')
+#6 E:\Dropbox\htdocs\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 E:\Dropbox\htdocs\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\views\layouts\column2.php(6): CBaseController->endContent()
+#9 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#10 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(784): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#12 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\UsuariosistemaController.php(127): CController->render('index', Array)
+#13 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): UsuariosistemaController->actionIndex()
+#14 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#21 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#23 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariosistema/...')
+#24 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariosistema/index
+---
+2021/07/17 16:52:02 [error] [exception.CException] CException: UsuariosistemaController cannot find the requested view "application.views.alertas._modalUltimasAlertas". in E:\Dropbox\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 E:\Dropbox\htdocs\BotonAntipanico\protected\views\layouts\main.php(413): CController->renderPartial('application.vie...')
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#3 E:\Dropbox\htdocs\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#4 E:\Dropbox\htdocs\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('\t\r\n\n<h1>Usuario...')
+#5 E:\Dropbox\htdocs\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('\t\r\n\n<h1>Usuario...')
+#6 E:\Dropbox\htdocs\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 E:\Dropbox\htdocs\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\views\layouts\column2.php(6): CBaseController->endContent()
+#9 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#10 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(784): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#12 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\UsuariosistemaController.php(127): CController->render('index', Array)
+#13 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): UsuariosistemaController->actionIndex()
+#14 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#21 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#23 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariosistema/...')
+#24 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariosistema/index
+---
+2021/07/17 22:21:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "inicio/index". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('inicio/index')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=inicio/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=web/login
+---
+2021/07/17 22:21:37 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "inicio". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/
+---
+2021/07/17 22:28:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "inicio". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/
+---
+2021/07/17 23:03:56 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC) in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php:164
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(276): CWebApplication->createController('')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#2 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/BotonAntipanico/
+---
+2021/07/18 01:31:32 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC) in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php:164
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(276): CWebApplication->createController('')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#2 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/BotonAntipanico/
+---
+2021/07/18 01:36:54 [error] [exception.ParseError] ParseError: syntax error, unexpected '$filteredData' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php:503
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(276): CWebApplication->createController('')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#2 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/BotonAntipanico/
+---
+2021/07/18 02:01:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gps_efip.mensajehistorico' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `mensajehistorico`.
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/18 14:44:40 [error] [exception.CException] CException: mensajehistorico and its behaviors do not have a method or closure named "obternerPosiciones". in E:\Dropbox\htdocs\framework\base\CComponent.php:266
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(227): CComponent->__call('obternerPosicio...', Array)
+#1 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(55): CActiveRecord->__call('obternerPosicio...', Array)
+#2 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#3 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#12 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/BotonAntipanico/
+---
+2021/07/18 15:21:06 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in E:\Dropbox\htdocs\BotonAntipanico\protected\models\mensajehistorico.php:144
+Stack trace:
+#0 [internal function]: YiiBase::autoload('mensajehistoric...')
+#1 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(54): spl_autoload_call('mensajehistoric...')
+#2 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#3 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#12 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/BotonAntipanico/
+---
+2021/07/18 15:23:35 [error] [exception.CException] CException: InicioController cannot find the requested view "_grillaUltimasPosiciones". in E:\Dropbox\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\index.php(73): CController->renderPartial('_grillaUltimasP...', Array)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#3 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#4 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(63): CController->render('index', Array)
+#6 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#7 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#14 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#16 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#17 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/BotonAntipanico/
+---
+2021/07/18 16:06:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a.MensajeAlertaEstado
+		  
+		  WHERE LEFT(MensajeFechaHora,10) >= '2021-07-11 16' at line 5. The SQL statement executed was: SELECT idMensaje,MensajeIdTemporal,MensajetipoMensaje,MensajeIMEI,UsuarioFinalNombre,MensajeFechaHora,Descripcion as AlertaEstado 
+		  FROM mensajehistorico a
+		  INNER JOIN asigaciondipositivousuario b ON a.MensajeIMEI = b.AsignacionIMEI
+		  INNER JOIN usuariofinal c ON c.idUsuarioFinal = b.AsignacionIdUsuarioFinal
+		  INNER JOIN estadoalerta d ON d.idEstadoAlerta a.MensajeAlertaEstado
+		  
+		  WHERE LEFT(MensajeFechaHora,10) >= '2021-07-11 16:06:24' AND LEFT(MensajeFechaHora,10) <= '2021-07-18 16:06:24' 
+		  ORDER BY MensajeFechaHora DESC.
+in E:\Dropbox\htdocs\BotonAntipanico\protected\models\mensajehistorico.php (143)
+in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php (55)
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/18 16:06:24 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a.MensajeAlertaEstado
+		  
+		  WHERE LEFT(MensajeFechaHora,10) >= '2021-07-11 16' at line 5. The SQL statement executed was: SELECT idMensaje,MensajeIdTemporal,MensajetipoMensaje,MensajeIMEI,UsuarioFinalNombre,MensajeFechaHora,Descripcion as AlertaEstado 
+		  FROM mensajehistorico a
+		  INNER JOIN asigaciondipositivousuario b ON a.MensajeIMEI = b.AsignacionIMEI
+		  INNER JOIN usuariofinal c ON c.idUsuarioFinal = b.AsignacionIdUsuarioFinal
+		  INNER JOIN estadoalerta d ON d.idEstadoAlerta a.MensajeAlertaEstado
+		  
+		  WHERE LEFT(MensajeFechaHora,10) >= '2021-07-11 16:06:24' AND LEFT(MensajeFechaHora,10) <= '2021-07-18 16:06:24' 
+		  ORDER BY MensajeFechaHora DESC in E:\Dropbox\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\Dropbox\htdocs\BotonAntipanico\protected\models\mensajehistorico.php(143): CDbCommand->queryAll()
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(55): mensajehistorico->obternerPosiciones()
+#3 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#4 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/BotonAntipanico/
+---
+2021/07/18 11:14:01 [error] [exception.CException] CException: InicioController cannot find the requested view "application.views.alertas._modalUltimasAlertas". in E:\Dropbox\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 E:\Dropbox\htdocs\BotonAntipanico\protected\views\layouts\main.php(371): CController->renderPartial('application.vie...')
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#3 E:\Dropbox\htdocs\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#4 E:\Dropbox\htdocs\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('\t\r\n<!--<script ...')
+#5 E:\Dropbox\htdocs\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('\t\r\n<!--<script ...')
+#6 E:\Dropbox\htdocs\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 E:\Dropbox\htdocs\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\views\layouts\column2.php(6): CBaseController->endContent()
+#9 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#10 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#11 E:\Dropbox\htdocs\framework\web\CController.php(784): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#12 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(63): CController->render('index', Array)
+#13 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#14 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#21 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#23 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/BotonAntipanico/
+---
+2021/07/19 22:00:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "logistica/index". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('logistica/index')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=logistica/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=inicio/index
+---
+2021/07/19 22:09:48 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('dispositivo/adm...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=dispositivo/admin
+---
+2021/07/19 22:36:06 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('dispositivo/adm...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=dispositivo/admin
+---
+2021/07/19 22:36:33 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('dispositivo/adm...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=dispositivo/admin
+---
+2021/07/19 22:36:38 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('dispositivo/adm...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=dispositivo/admin
+---
+2021/07/19 22:36:42 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('dispositivo/adm...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=dispositivo/admin
+---
+2021/07/19 22:36:47 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('dispositivo/adm...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=dispositivo/admin
+---
+2021/07/19 22:36:52 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('dispositivo/adm...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=dispositivo/admin
+---
+2021/07/19 22:36:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usariofinal/index". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usariofinal/ind...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usariofinal/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=agente/index
+---
+2021/07/19 22:37:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "logistica/index". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('logistica/index')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=logistica/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=dispositivo/index
+---
+2021/07/20 03:39:03 [error] [exception.ParseError] ParseError: syntax error, unexpected '$dataProvider' (T_VARIABLE), expecting ',' or ';' in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\DispositivoController.php:125
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('dispositivo/ind...')
+#2 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=dispositivo/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usariofinal/index
+---
+2021/07/19 22:50:17 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "admin". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('admin')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=agente/admin
+---
+2021/07/19 22:50:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usariofinal/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usariofinal/adm...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usariofinal/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+---
+2021/07/19 22:50:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usuariofinal/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariofinal/ad...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariofinal/admin
+---
+2021/07/19 23:04:46 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usariofinal/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usariofinal/adm...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usariofinal/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariofinal/admin
+---
+2021/07/19 23:05:56 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usariofinal/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usariofinal/adm...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usariofinal/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariofinal/admin
+---
+2021/07/19 23:06:38 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usariofinal/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usariofinal/adm...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usariofinal/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usariofinal/admin
+---
+2021/07/19 23:06:55 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usariofinal/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usariofinal/adm...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usariofinal/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usariofinal/admin
+---
+2021/07/19 23:07:13 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usariofinal/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usariofinal/adm...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usariofinal/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usariofinal/admin
+---
+2021/07/19 23:07:17 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariofinal/ad...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariofinal/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usariofinal/admin
+---
+2021/07/19 23:07:41 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariofinal/ad...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariofinal/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariofinal/admin
+---
+2021/07/19 23:09:33 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usuariossitema/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariossitema/...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariossitema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariofinal/admin
+---
+2021/07/19 23:10:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usuariossitema/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariossitema/...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariossitema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariofinal/admin
+---
+2021/07/19 23:10:56 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usuariossitema/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariossitema/...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariossitema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariofinal/admin
+---
+2021/07/19 23:11:33 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usuariossitema/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariossitema/...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariossitema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariofinal/admin
+---
+2021/07/19 23:11:46 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usuariossitema/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariossitema/...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariossitema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariofinal/admin
+---
+2021/07/19 23:13:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usuariossitema/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariossitema/...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariossitema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariofinal/admin
+---
+2021/07/19 23:13:22 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('dispositivo/adm...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=dispositivo/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariossitema/admin
+---
+2021/07/19 23:13:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usuariositema/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariositema/a...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariositema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=dispositivo/admin
+---
+2021/07/19 23:14:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usuariositema/admin". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariositema/a...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariositema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=dispositivo/admin
+---
+2021/07/20 04:14:39 [error] [exception.CException] CException: Property "UsuarioSistema.UsuariootipoUsuario" is not defined. in E:\Dropbox\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('UsuariootipoUsu...')
+#1 E:\Dropbox\htdocs\BotonAntipanico\protected\models\UsuarioSistema.php(89): CActiveRecord->__get('UsuariootipoUsu...')
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\admin.php(45): UsuarioSistema->search()
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#5 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#7 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\UsuariosistemaController.php(142): CController->render('admin', Array)
+#8 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): UsuariosistemaController->actionAdmin()
+#9 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#16 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariosistema/...')
+#19 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariosistema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariositema/admin
+---
+2021/07/20 04:17:00 [error] [exception.CException] CException: Property "UsuarioSistema.UsuariootipoUsuario" is not defined. in E:\Dropbox\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('UsuariootipoUsu...')
+#1 E:\Dropbox\htdocs\BotonAntipanico\protected\models\UsuarioSistema.php(89): CActiveRecord->__get('UsuariootipoUsu...')
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\admin.php(45): UsuarioSistema->search()
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#5 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#7 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\UsuariosistemaController.php(142): CController->render('admin', Array)
+#8 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): UsuariosistemaController->actionAdmin()
+#9 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#16 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariosistema/...')
+#19 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariosistema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariositema/admin
+---
+2021/07/20 04:17:28 [error] [exception.CException] CException: Property "UsuarioSistema.UsuariootipoUsuario" is not defined. in E:\Dropbox\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('UsuariootipoUsu...')
+#1 E:\Dropbox\htdocs\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('UsuariootipoUsu...')
+#2 E:\Dropbox\htdocs\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(UsuarioSistema), 'UsuariootipoUsu...')
+#3 E:\Dropbox\htdocs\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(UsuarioSistema), 'UsuariootipoUsu...', Array)
+#4 E:\Dropbox\htdocs\framework\zii\widgets\grid\CDataColumn.php(103): CHtml::activeTextField(Object(UsuarioSistema), 'UsuariootipoUsu...', Array)
+#5 E:\Dropbox\htdocs\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 E:\Dropbox\htdocs\framework\zii\widgets\grid\CGridView.php(532): CGridColumn->renderFilterCell()
+#7 E:\Dropbox\htdocs\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#8 E:\Dropbox\htdocs\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#9 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#13 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): CBaseListView->run()
+#14 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\admin.php(44): CBaseController->widget('zii.widgets.gri...', Array)
+#15 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#16 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#17 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#18 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#19 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\UsuariosistemaController.php(142): CController->render('admin', Array)
+#20 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): UsuariosistemaController->actionAdmin()
+#21 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#28 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#30 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariosistema/...')
+#31 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#32 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariosistema/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariositema/admin
+---
+2021/07/20 04:27:13 [error] [exception.CException] CException: Property "UsuarioSistema.estado" is not defined. in E:\Dropbox\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('estado')
+#1 E:\Dropbox\htdocs\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('estado')
+#2 E:\Dropbox\htdocs\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(UsuarioSistema), 'estado')
+#3 E:\Dropbox\htdocs\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(UsuarioSistema), 'estado', Array)
+#4 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbDataColumn.php(119): CHtml::activeTextField(Object(UsuarioSistema), 'estado', Array)
+#5 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbDataColumn.php(78): TbDataColumn->renderFilterCellContent()
+#6 E:\Dropbox\htdocs\framework\zii\widgets\grid\CGridView.php(532): TbDataColumn->renderFilterCell()
+#7 E:\Dropbox\htdocs\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbExtendedGridView.php(339): CGridView->renderTableHeader()
+#9 E:\Dropbox\htdocs\framework\zii\widgets\grid\CGridView.php(480): TbExtendedGridView->renderTableHeader()
+#10 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbExtendedGridView.php(244): CBaseListView->renderContent()
+#14 E:\Dropbox\htdocs\framework\zii\widgets\CBaseListView.php(135): TbExtendedGridView->renderContent()
+#15 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): CBaseListView->run()
+#16 E:\Dropbox\htdocs\BotonAntipanico\protected\views\usuariosistema\admin.php(44): CBaseController->widget('booster.widgets...', Array)
+#17 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#18 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#19 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#20 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#21 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\UsuariosistemaController.php(142): CController->render('admin', Array)
+#22 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): UsuariosistemaController->actionAdmin()
+#23 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#24 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#26 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#27 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#28 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#30 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#32 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usuariosistema/...')
+#33 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#34 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#35 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=usuariosistema/admin&UsuarioSistema_sort=UsuarioTipoUsuario.desc
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=usuariosistema/admin&UsuarioSistema_sort=UsuarioTipoUsuario
+---
+2021/07/19 23:29:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "admin". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('admin')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php
+---
+2021/07/19 23:34:41 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "admin". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('admin')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+---
+2021/07/19 23:34:43 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "admin". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('admin')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+---
+2021/07/19 23:36:05 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "admin". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('admin')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+---
+2021/07/19 23:36:08 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "admin". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('admin')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+---
+2021/07/19 23:36:49 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#9 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+---
+2021/07/20 05:03:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gps_efip`.`asigaciondipositivousuario`, CONSTRAINT `FK_asigaciondipositivousuario` FOREIGN KEY (`AsignacionIMEI`) REFERENCES `dispositivo` (`IMEI`)). The SQL statement executed was: INSERT INTO `asigaciondipositivousuario` (`AsignacionIMEI`, `AsignacionIdUsuarioFinal`, `AsignacionFechaAlta`) VALUES (:yp0, :yp1, :yp2).
+in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php (86)
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/20 05:03:41 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gps_efip`.`asigaciondipositivousuario`, CONSTRAINT `FK_asigaciondipositivousuario` FOREIGN KEY (`AsignacionIMEI`) REFERENCES `dispositivo` (`IMEI`)). The SQL statement executed was: INSERT INTO `asigaciondipositivousuario` (`AsignacionIMEI`, `AsignacionIdUsuarioFinal`, `AsignacionFechaAlta`) VALUES (:yp0, :yp1, :yp2) in E:\Dropbox\htdocs\framework\db\CDbCommand.php:358
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php(86): CActiveRecord->save()
+#3 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): AsignaciondispositivousuarioController->actionCreate()
+#4 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('create')
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#14 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+---
+2021/07/20 05:07:16 [error] [exception.CException] CException: Property "AsignacionDispositivoUsuario.AsignacionMovCond_IdConductor" is not defined. in E:\Dropbox\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('AsignacionMovCo...')
+#1 E:\Dropbox\htdocs\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('AsignacionMovCo...')
+#2 E:\Dropbox\htdocs\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(AsignacionDispositivoUsuario), 'AsignacionMovCo...')
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbSelect2.php(105): CHtml::activeDropDownList(Object(AsignacionDispositivoUsuario), 'AsignacionMovCo...', Array, Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(167): TbSelect2->run()
+#5 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbActiveForm.php(1293): CBaseController->widget('booster.widgets...', Array, true)
+#6 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbActiveForm.php(1152): TbActiveForm->verticalGroup(Array, Object(AsignacionDispositivoUsuario), 'AsignacionMovCo...', Array)
+#7 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbActiveForm.php(1126): TbActiveForm->customFieldGroupInternal(Array, Object(AsignacionDispositivoUsuario), 'AsignacionMovCo...', Array)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbActiveForm.php(866): TbActiveForm->widgetGroupInternal('booster.widgets...', Object(AsignacionDispositivoUsuario), 'AsignacionMovCo...', Array)
+#9 E:\Dropbox\htdocs\BotonAntipanico\protected\views\asignaciondispositivousuario\_form.php(35): TbActiveForm->select2Group(Object(AsignacionDispositivoUsuario), 'AsignacionMovCo...', Array)
+#10 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#11 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#12 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#13 E:\Dropbox\htdocs\BotonAntipanico\protected\views\asignaciondispositivousuario\create.php(18): CController->renderPartial('_form', Array)
+#14 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#15 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#16 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#17 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#18 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php(92): CController->render('create', Array)
+#19 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): AsignaciondispositivousuarioController->actionCreate()
+#20 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#27 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('create')
+#29 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#30 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+---
+2021/07/20 05:08:04 [error] [exception.CException] CException: Property "AsignacionDispositivoUsuario.AsignacionDispositivoUsuario" is not defined. in E:\Dropbox\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('AsignacionDispo...')
+#1 E:\Dropbox\htdocs\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('AsignacionDispo...')
+#2 E:\Dropbox\htdocs\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(AsignacionDispositivoUsuario), 'AsignacionDispo...')
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbSelect2.php(105): CHtml::activeDropDownList(Object(AsignacionDispositivoUsuario), 'AsignacionDispo...', Array, Array)
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(167): TbSelect2->run()
+#5 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbActiveForm.php(1293): CBaseController->widget('booster.widgets...', Array, true)
+#6 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbActiveForm.php(1152): TbActiveForm->verticalGroup(Array, Object(AsignacionDispositivoUsuario), 'AsignacionDispo...', Array)
+#7 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbActiveForm.php(1126): TbActiveForm->customFieldGroupInternal(Array, Object(AsignacionDispositivoUsuario), 'AsignacionDispo...', Array)
+#8 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\booster\widgets\TbActiveForm.php(866): TbActiveForm->widgetGroupInternal('booster.widgets...', Object(AsignacionDispositivoUsuario), 'AsignacionDispo...', Array)
+#9 E:\Dropbox\htdocs\BotonAntipanico\protected\views\asignaciondispositivousuario\_form.php(30): TbActiveForm->select2Group(Object(AsignacionDispositivoUsuario), 'AsignacionDispo...', Array)
+#10 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#11 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#12 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#13 E:\Dropbox\htdocs\BotonAntipanico\protected\views\asignaciondispositivousuario\create.php(18): CController->renderPartial('_form', Array)
+#14 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#15 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#16 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#17 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#18 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php(92): CController->render('create', Array)
+#19 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): AsignaciondispositivousuarioController->actionCreate()
+#20 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#27 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('create')
+#29 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#30 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+---
+2021/07/20 05:13:42 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `asigaciondipositivousuario` `t` WHERE AsignacionFechaBaja IS NULL  AND AsignacionIMEI =  LIMIT 1.
+in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php (72)
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/20 05:13:42 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `asigaciondipositivousuario` `t` WHERE AsignacionFechaBaja IS NULL  AND AsignacionIMEI =  LIMIT 1 in E:\Dropbox\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php(72): CActiveRecord->find('AsignacionFecha...')
+#4 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): AsignaciondispositivousuarioController->actionCreate()
+#5 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('create')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+---
+2021/07/20 05:15:27 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `asigaciondipositivousuario` `t` WHERE AsignacionFechaBaja IS NULL  AND AsignacionIMEI =  LIMIT 1.
+in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php (72)
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/20 05:15:27 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `asigaciondipositivousuario` `t` WHERE AsignacionFechaBaja IS NULL  AND AsignacionIMEI =  LIMIT 1 in E:\Dropbox\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php(72): CActiveRecord->find('AsignacionFecha...')
+#4 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): AsignaciondispositivousuarioController->actionCreate()
+#5 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('create')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+---
+2021/07/20 05:16:06 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `asigaciondipositivousuario` `t` WHERE AsignacionFechaBaja IS NULL  AND AsignacionIMEI =  LIMIT 1.
+in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php (74)
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/20 05:16:06 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `asigaciondipositivousuario` `t` WHERE AsignacionFechaBaja IS NULL  AND AsignacionIMEI =  LIMIT 1 in E:\Dropbox\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php(74): CActiveRecord->find('AsignacionFecha...')
+#4 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): AsignaciondispositivousuarioController->actionCreate()
+#5 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('create')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+---
+2021/07/20 05:16:50 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `asigaciondipositivousuario` `t` WHERE  AsignacionFechaBaja IS NULL AND AsignacionIMEI =  LIMIT 1.
+in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php (75)
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/20 05:16:50 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `asigaciondipositivousuario` `t` WHERE  AsignacionFechaBaja IS NULL AND AsignacionIMEI =  LIMIT 1 in E:\Dropbox\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 E:\Dropbox\htdocs\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php(75): CActiveRecord->find(' AsignacionFech...')
+#4 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): AsignaciondispositivousuarioController->actionCreate()
+#5 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('create')
+#14 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#15 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+---
+2021/07/20 05:19:22 [error] [exception.ParseError] ParseError: syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\AsignaciondispositivousuarioController.php:76
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(276): CWebApplication->createController('create/')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#2 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/create
+---
+2021/07/20 00:25:59 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Dropbox\htdocs\framework\web\CController.php:1118
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#10 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/delete&id=4
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+---
+2021/07/20 00:29:23 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Dropbox\htdocs\framework\web\CController.php:1118
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('asignaciondispo...')
+#10 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=asignaciondispositivousuario/delete&id=1
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=asignaciondispositivousuario/admin
+---
+2021/07/21 02:51:49 [error] [exception.CException] CException: EJuiDateTimePicker must specify "model" and "attribute" or "name" property values. in E:\Dropbox\htdocs\framework\zii\widgets\jui\CJuiInputWidget.php:59
+Stack trace:
+#0 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\juidatetimepicker\EJuiDateTimePicker.php(47): CJuiInputWidget->resolveNameID()
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): EJuiDateTimePicker->run()
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\index.php(70): CBaseController->widget('application.ext...', Array)
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#5 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(63): CController->render('index', Array)
+#8 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#9 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#16 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#18 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('inicio/index')
+#19 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=inicio/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=web/login
+---
+2021/07/21 02:54:58 [error] [exception.CException] CException: EJuiDateTimePicker must specify "model" and "attribute" or "name" property values. in E:\Dropbox\htdocs\framework\zii\widgets\jui\CJuiInputWidget.php:59
+Stack trace:
+#0 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\juidatetimepicker\EJuiDateTimePicker.php(47): CJuiInputWidget->resolveNameID()
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): EJuiDateTimePicker->run()
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\index.php(70): CBaseController->widget('application.ext...', Array)
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#5 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(65): CController->render('index', Array)
+#8 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#9 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#16 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#18 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('inicio/index')
+#19 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=inicio/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=web/login
+---
+2021/07/21 02:56:07 [error] [exception.CException] CException: EJuiDateTimePicker must specify "model" and "attribute" or "name" property values. in E:\Dropbox\htdocs\framework\zii\widgets\jui\CJuiInputWidget.php:59
+Stack trace:
+#0 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\juidatetimepicker\EJuiDateTimePicker.php(47): CJuiInputWidget->resolveNameID()
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): EJuiDateTimePicker->run()
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\index.php(70): CBaseController->widget('application.ext...', Array)
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#5 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(65): CController->render('index', Array)
+#8 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#9 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#16 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#18 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('inicio/index')
+#19 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=inicio/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=web/login
+---
+2021/07/21 04:07:23 [error] [exception.ParseError] ParseError: syntax error, unexpected '/' in E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\_grillaUltimasPosiciones.php:88
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#1 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\index.php(117): CController->renderPartial('_grillaUltimasP...', Array)
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#5 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(65): CController->render('index', Array)
+#8 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#9 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#16 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#18 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('inicio/index')
+#19 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=inicio/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=web/login
+---
+2021/07/21 04:07:33 [error] [exception.ParseError] ParseError: syntax error, unexpected '/' in E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\_grillaUltimasPosiciones.php:88
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#1 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\index.php(117): CController->renderPartial('_grillaUltimasP...', Array)
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#5 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(65): CController->render('index', Array)
+#8 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#9 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#16 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#18 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('inicio/index')
+#19 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=inicio/index
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=web/login
+---
+2021/07/21 05:03:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gps_efip.temporal' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `temporal`.
+in E:\Dropbox\htdocs\BotonAntipanico\index.php (13)
+2021/07/21 05:15:58 [error] [exception.CException] CException: EJuiDateTimePicker must specify "model" and "attribute" or "name" property values. in E:\Dropbox\htdocs\framework\zii\widgets\jui\CJuiInputWidget.php:59
+Stack trace:
+#0 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\juidatetimepicker\EJuiDateTimePicker.php(47): CJuiInputWidget->resolveNameID()
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): EJuiDateTimePicker->run()
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\_grillaUltimasPosiciones.php(17): CBaseController->widget('application.ext...', Array)
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#5 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\index.php(115): CController->renderPartial('_grillaUltimasP...', Array)
+#7 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#8 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#9 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#10 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#11 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(65): CController->render('index', Array)
+#12 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#13 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#20 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#22 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/BotonAntipanico/index.php
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=dispositivo/admin
+---
+2021/07/21 05:16:16 [error] [exception.CException] CException: EJuiDateTimePicker must specify "model" and "attribute" or "name" property values. in E:\Dropbox\htdocs\framework\zii\widgets\jui\CJuiInputWidget.php:59
+Stack trace:
+#0 E:\Dropbox\htdocs\BotonAntipanico\protected\extensions\juidatetimepicker\EJuiDateTimePicker.php(47): CJuiInputWidget->resolveNameID()
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(173): EJuiDateTimePicker->run()
+#2 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\_grillaUltimasPosiciones.php(17): CBaseController->widget('application.ext...', Array)
+#3 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#4 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#5 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#6 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\index.php(115): CController->renderPartial('_grillaUltimasP...', Array)
+#7 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#8 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#9 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#10 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#11 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(65): CController->render('index', Array)
+#12 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#13 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#20 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#22 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/BotonAntipanico/index.php
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=dispositivo/admin
+---

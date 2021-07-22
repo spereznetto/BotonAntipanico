@@ -1,0 +1,10 @@
+/* PLUGIN MULTISELECT */
+
+.slc-panel:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-texto1);
+}
+
+.slc-panel>label {
+    cursor: pointer!important;
+}

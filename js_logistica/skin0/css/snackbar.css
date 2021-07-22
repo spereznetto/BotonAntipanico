@@ -1,0 +1,8 @@
+/* SNACKBAR */
+
+.mdc-snackbar__action-button {
+    transition: none;
+    opacity: 1;
+    visibility: visible;
+    color: #56d4d4!important;
+}

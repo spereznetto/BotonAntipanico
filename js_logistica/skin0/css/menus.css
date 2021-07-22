@@ -1,0 +1,104 @@
+/*
+* MENU DERECHO DEL TOOLBAR PRINCIPAL
+*/
+
+.toolbar-menu-derecho>li:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-texto1);
+}
+
+
+/*
+* MENU DE ORDENAR LISTADOS
+*/
+
+ul[name="menu-ordenar-filtros"] li:not([aria-disabled=true]):hover {
+    background-color: var(--color-secundario);
+    color: var(--color-texto1);
+}
+
+
+/*
+* MENU ELEGIR UN ICONO
+*/
+
+div[name="menu-elegir-icono--parent"] {
+    position: absolute;
+    top: 0px!important;
+    transform: none!important;
+}
+
+ul[name="menu-elegir-icono"] {
+    margin-left: 6px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transform: none!important;
+}
+
+ul[name="menu-elegir-icono"] li:not([aria-disabled=true]):hover {
+    background-color: var(--color-secundario);
+}
+
+ul[name="menu-elegir-icono"] li:not([aria-disabled=true])>i {
+    /* Safari */
+    -webkit-transition-property: color;
+    /* Safari */
+    -webkit-transition-duration: 350ms;
+    /* Safari */
+    -webkit-transition-delay: 50ms;
+    transition-property: color;
+    transition-duration: 350ms;
+    transition-delay: 50ms;
+}
+
+ul[name="menu-elegir-icono"] li:not([aria-disabled=true]):hover>i {
+    color: var(--color-texto1);
+}
+
+
+/*
+* MENU ELEGIR UN COLOR
+*/
+
+div[name="menu-elegir-color--parent"] {
+    position: absolute;
+    top: 0px!important;
+    transform: none!important;
+}
+
+ul[name="menu-elegir-color"] {
+    transform: none!important;
+}
+
+
+/*
+* MENU ELEGIR CATEGORIA
+*/
+
+div[name="menu-elegir-categoria--parent"] {
+    transform: none!important;
+    position: absolute;
+    top: 0px!important;
+}
+
+div[name="menu-elegir-categoria--parent"].pocas-categorias {
+    top: 224px!important;
+}
+
+ul[name="menu-elegir-categoria"] {
+    margin-left: 6px;
+    transform: none!important;
+}
+
+ul[name="menu-elegir-categoria"] li:not([aria-disabled=true]):hover {
+    background-color: var(--color-secundario);
+    color: var(--color-texto1);
+}
+
+
+/* MENU DERECHO DEL TOOLBAR */
+
+.toolbar-menu-derecho-list {
+    top: 34px;
+    right: 24px;
+}

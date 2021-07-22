@@ -1,0 +1,132 @@
+/* TAG BUTTON QUE CONTIENE UN ICONO I EN VEZ DE TEXTO */
+
+.boton-icono {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+/* REMOVER BORDES MOZILLA */
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+/* BOTONES DE ACCIONES DE LOS LISTADOS */
+
+.grilla-item-btn {
+    color: #3382ca;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.grilla-item-btn:hover {
+    color: #303030 !important;
+}
+
+/* HELP ICON */
+
+.help-icon {
+    margin-left: 2px;
+    position: relative;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    color: #505050;
+    cursor: help;
+}
+
+/* PANEL DE CARGA BOTONES GENERALES */
+
+.boton-cargar {
+    float: right;
+    background-color: var(--color-azul);
+}
+
+.boton-cargar.apagado {
+    background-color: #c0c0c0 !important;
+}
+
+.btn-reinsertar,
+.btn-previsualizar {
+    float: right;
+    background-color: var(--color-verde);
+    margin-right: 8px;
+}
+
+/* PANEL DE CARGA RECORRIDO */
+
+.mdc-button--dia {
+    background-color: var(--color-secundario);
+    color: var(--color-texto1);
+}
+
+.btn-dia {
+    padding: 0px 4px;
+    min-width: 50px !important;
+}
+
+/* PANEL DE CARGA ROUTING */
+
+.btn-excluir {
+    padding: 0px 4px;
+    min-width: 70px !important;
+}
+
+.btn-vehiculo {
+    padding-top: 0px;
+    min-width: 74px;
+}
+
+.btn-modo,
+.btn-trafico {
+    width: calc(50% - 8px);
+}
+
+.btn-vehiculo.mdc-button--raised,
+.btn-modo.mdc-button--raised,
+.btn-trafico.mdc-button--raised {
+    background-color: var(--color-secundario);
+    color: var(--color-texto1);
+}
+
+.btn-excluir.mdc-button--excluir {
+    background-color: #f5a3a3;
+}
+
+/* BOTONES DE ACCIONES SOBRE LOS ITEMS DE LOS LISTADOS */
+
+.boton-apagado {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* BOTON BUSCAR */
+
+.boton-buscar {
+    background-color: rgba(46, 121, 185, 0.75);
+}
+
+.boton-limpiar {
+    background-color: rgba(136, 136, 136, 0.75);
+}
+
+/* BOTON IMPRIMIR INFORME */
+
+a[name="btn-imprimir-informe-recorrido-historico"] {
+    display: flex;
+    text-decoration: none;
+    height: fit-content;
+}
+
+/* CRONO */
+
+.crono-actualizar-ahora {
+    color: var(--color-texto1);
+}

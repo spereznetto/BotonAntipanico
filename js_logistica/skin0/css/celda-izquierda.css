@@ -1,0 +1,153 @@
+/* CELDAIZQUIERDA */
+
+div[name="celda-izquierda"] {
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    min-width: 525px;
+    display: none;
+    background-color: var(--color-fondo1);
+}
+
+div[name="celda-izquierda"].active {
+    display: block!important;
+}
+
+
+/* CARD */
+
+div[name="celda-izquierda"] .mdc-card__primary {
+    cursor: default;
+}
+
+div[name="celda-izquierda"] .mdc-card__primary .mdc-card__title--large {
+    padding: 0!important;
+    text-shadow: 1px 1px 1px #000;
+}
+
+div[name="celda-izquierda"] .head-card--bg {
+    height: 10rem;
+    background-color: var(--color-primario);
+}
+
+div[name="celda-izquierda"] .head-card--bg .mdc-card__actions {
+    background: rgba(40, 40, 40, 0.35);
+}
+
+div[name="celda-izquierda"] .mdc-card__actions {
+    padding: 4px 8px;
+}
+
+div[name="celda-izquierda"] .texto1 {
+    color: var(--color-texto1);
+}
+
+
+/* CRONO */
+
+div[name="timer_crono-parent"] {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 124px;
+    height: 60px;
+    background-color: rgba(40, 40, 40, 0.35);
+    border-radius: 5px;
+}
+
+div[name="celda-izquierda"] i[name="crono-icono"] {
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+div[name="celda-izquierda"] .crono-button {
+    border-radius: 20%;
+    height: 18px;
+    width: 16px;
+    min-width: 16px;
+    max-width: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+div[name="celda-izquierda"] .crono-button>i {
+    font-size: 14px;
+}
+
+div[name="celda-izquierda"] #crono_reloj_numero {
+    cursor: default;
+}
+
+div#crono_reloj {
+    min-width: 18px;
+}
+
+@keyframes flickerAnimation {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@-o-keyframes flickerAnimation {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@-moz-keyframes flickerAnimation {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@-webkit-keyframes flickerAnimation {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+div[name="celda-izquierda"] .animate-flicker {
+    -webkit-animation: flickerAnimation 2.5s forwards;
+    -moz-animation: flickerAnimation 2.5s forwards;
+    -o-animation: flickerAnimation 2.5s forwards;
+    animation: flickerAnimation 2.5s forwards;
+}
+
+
+/* TABS */
+
+div[name="celda-izquierda"] section[name="tabs-botones"] .mdc-button {
+    color: var(--color-texto1);
+}
+
+div[name="celda-izquierda"] section[name="tabs-botones"] .mdc-button--raised {
+    color: black;
+    background-color: white;
+}
+
+
+/* PANELES */
+
+div[name="celda-izquierda"] .panels {
+    padding-left: 4px;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+
+div[name="celda-izquierda"] .panel {
+    overflow: auto;
+}

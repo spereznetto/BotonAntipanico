@@ -1,0 +1,12 @@
+.mdc-layout-grid__inner>div {
+    max-width: -moz-available;
+}
+
+
+/* PANEL CARGA ROUTING */
+
+.grid-grosor-opacidad {
+    margin-top: 8px;
+    padding: 2px 2px;
+    background-color: #dddddd;
+}

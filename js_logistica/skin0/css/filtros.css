@@ -1,0 +1,168 @@
+/* FILTROS */
+
+.filtros-listado {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #c5c5c5;
+    height: auto;
+}
+
+.filtro-label {
+    color: rgba(0, 0, 0, 0.68);
+    cursor: auto;
+    display: block;
+    font-family: Roboto, sans-serif;
+    height: 19px;
+    font-size: 13px;
+    pointer-events: none;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.filtros-botonera-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtros-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 40px;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #303030;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.filtros-btn:hover {
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+}
+
+.filtros-btn-ordenar {
+    background-color: var(--color-ordenar);
+}
+
+.filtros-btn-limpiar {
+    background-color: var(--color-limpiar);
+    margin-left: 8px;
+}
+
+.filtros-btn-filtrar {
+    background-color: var(--color-filtrar);
+    margin-left: 8px;
+}
+
+.filtros-btn-quitados {
+    background-color: var(--color-verde);
+    margin-left: 8px;
+}
+
+.accion-btn-agregar-todos {
+    background-color: var(--color-azul);
+    margin-left: 8px;
+}
+
+.accion-btn-marker-tooltip-cambiar {
+    background-color: var(--color-violeta);
+    margin-left: 8px;
+}
+
+.accion-btn-marker-tooltip-cambiar>i {
+    display: none;
+}
+
+.accion-btn-marker-tooltip-cambiar>i.activado {
+    display: flex!important;
+}
+
+@keyframes girar {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.filtros-btn-crear {
+    min-width: 32px!important;
+    min-height: 32px!important;
+    width: 32px!important;
+    height: 32px!important;
+    max-width: 32px!important;
+    max-height: 32px!important;
+}
+
+.filtros-btn-crear:hover>i {
+    animation: girar 200ms linear;
+}
+
+.filtros-btn-importar {
+    margin-left: 8px;
+    background-color: #c6d8ba;
+}
+
+.filtros-btn-importar:hover {
+    background-color: rgb(186, 216, 192);
+}
+
+.filtros-btn-importar:active {
+    background-color: rgb(168, 186, 202);
+}
+
+.filtros-btn-importar>i {
+    color: #525252;
+}
+
+
+/* filtro tipo boolean */
+
+.filtro-boton-booleano {
+    font-size: 12px;
+    line-height: 1px;
+    height: 24px;
+    width: 100%;
+    color: #383838;
+    margin-top: 5px;
+}
+
+.filtro-boton-booleano.indistinto {
+    background-color: #dadada;
+}
+
+.filtro-boton-booleano.no {
+    background-color: var(--color-rojo);
+    color: white;
+}
+
+.filtro-boton-booleano.si {
+    background-color: var(--color-azul);
+    color: white;
+}
+
+
+/* TEXTFIELDS DE FILTROS */
+
+.filtro-item-textfield {
+    margin-top: 0px!important;
+}
+
+
+/* BOTONES DE ACCION DE LOS FILTROS */
+
+.accion-btn>i {
+    color: white;
+}
