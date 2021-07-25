@@ -102,7 +102,7 @@ class Alerta extends CActiveRecord
 		return parent::model($className);
 	}
 
-	public function obternerAlertas($idDispMovil = null,$datos = null) {
+	public function obternerAlertas($datos = null) {
 		
 		if ($datos['desde'] != '') {
 			$hoy = $datos['hasta'];
@@ -131,4 +131,41 @@ class Alerta extends CActiveRecord
 		  $consulta = Yii::app()->db->createCommand($sql)->queryAll();
 		  return $consulta;
 	}		  
+	public function envioSMS($idAlerta = null) {
+			
+		  // Aca el sql de un solo movil
+		  $sql = "
+		  SELECT UsuarioFinalNombre,UsuarioFinalTelefono
+					FROM alerta a
+					LEFT JOIN asigaciondipositivousuario b ON b.idAsignacion = a.AlertaidAsignacion AND b.asignacionfechabaja IS NULL
+					LEFT JOIN usuariofinal c ON c.idUsuarioFinal = b.AsignacionIdUsuarioFinal 
+					WHERE idAlerta = '".$idAlerta."'";
+
+
+		 // echo $sql;
+		  //die;
+		  $consulta = Yii::app()->db->createCommand($sql)->queryAll();
+		  return $consulta;
+	}		 
+
+	public function alertultpos($idAlerta = null) {
+			
+		// Aca el sql de un solo movil
+		$sql = "SELECT MensajeLatitud,MensajeLongitud
+	FROM mensajehistorico a
+	INNER JOIN asigaciondipositivousuario b ON a.MensajeIMEI = b.AsignacionIMEI
+	INNER JOIN usuariofinal c ON c.idUsuarioFinal = b.AsignacionIdUsuarioFinal AND asignacionfechabaja IS NULL
+	INNER JOIN alerta d ON d.AlertaidAsignacion = b.idAsignacion
+	INNER JOIN estadoalerta e ON e.idEstadoAlerta = d.estadoAlerta
+	WHERE idAlerta = '".$idAlerta."' AND MensajetipoMensaje = 'ALARMA'
+	ORDER BY idMensaje DESC limit 1";
+		
+
+
+	   // echo $sql;
+		//die;
+		$consulta = Yii::app()->db->createCommand($sql)->queryAll();
+		return $consulta;
+  }
+
 }

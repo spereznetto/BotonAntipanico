@@ -6,7 +6,26 @@ $this->breadcrumbs=array(
 	'Alertas',
 );
 
+$cs = Yii::app()->clientScript;
 ?>
+
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/jquery.js'); ?>
+    
+    <?php Yii::app()->clientScript->registerScriptFile('https://www.gstatic.com/charts/loader.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/funcionesGmapOSM.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet-src.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.draw-src.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.label-src.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.measurecontrol.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/l.control.geosearch.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/l.geosearch.provider.esri.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/l.markerrotate.js'); ?>
+    <?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.css'); ?>
+    <?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.draw.css'); ?>
+    <?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.label.css'); ?>
+    <?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.measurecontrol.css'); ?>
+    <?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/js/leaflet/l.geosearch.css'); ?>
+
 
 <h3>Visualizacion de Dispositivos</h3>
 
@@ -15,7 +34,7 @@ $this->breadcrumbs=array(
 <div class="row" style="padding-left: 10px">
   <div id="movilesDiv" colspan="2" class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="padding-left: 3px; padding-right: 3px;">
     <div class="panel panel-default">
-      <div class="panel-content" style="height:400px; overflow:auto; padding: 0px;" id="grillaUltimasPosiciones">
+      <div class="panel-content" style="height:450px; overflow:auto; padding: 0px;" id="grillaUltimasPosiciones">
         <div style="position: absolute; background-color: #FFF; width: 100%; height: 100%; z-index: 1000; opacity: 0.7; display:none" id="cargandoUltPosicion">
           <i class="fa fa-spinner fa-spin fa-4x" style="margin-top: 150px; left: 50%; margin-left: -35px; position: absolute"></i>
         </div>

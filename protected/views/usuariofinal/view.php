@@ -18,12 +18,20 @@ $this->menu=array(
 
 <h3>Ver informacion del  Usuario Final Numero <?php echo $model->idUsuarioFinal; ?></h3>
 
+<?php
+	//var_dump($model);
+	//die;
+?>
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'idUsuarioFinal',
 		'UsuarioFinalNombre',
 		'UsuarioFinalDni',
-		'UsuarioFinalEstadoUsuario',
+		'UsuarioFinalTelefono',
+		[
+		'header' => 'Estado del Usuario',
+		'name' => 'UsuarioFinalTelefono.idEstadoUsuario.Descripcion',
+		]
 	),
 )); ?>

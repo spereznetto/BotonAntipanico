@@ -32,7 +32,7 @@ class AlertaController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','gestionalertas'),
+				'actions'=>array('create','update','gestionalertas','envioSMS','compartirubicacion'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -188,4 +188,87 @@ class AlertaController extends Controller
         
         $this->render('index', array('arrayAlertas' => $arrayAlertas));
     }
+
+	public function actionenvioSMS($idAlerta) {
+    
+        $this->layout = 'column2';
+
+        $model = new alerta();
+
+		if(!($_POST['numeroaenviar'])){
+
+        $model = $model->envioSMS($idAlerta);
+		// model tiene ahora el nombre dle usuario y el telefono lo tiene que amndar al render
+
+
+        $this->render('envioSMS', array('arrayDatos' => $model));
+
+		}else{
+
+			$data = Yii::app()->curl->post('http://servicio.smsmasivos.com.ar/enviar_sms.asp?',FALSE,
+
+			array(
+		
+			'api'=>'1','usuario'=>'MITESIA','clave'=>'Q1W2E3R4','tos'=>$_POST['numeroaenviar'],'texto'=> 'Hola... Su alerta a sido recibida, nos podremos en contacto lo antes posible. COM'
+		
+			)
+		
+		);
+		
+
+			//print_r($data);
+				//echo "respuesta de envio " . $data;
+			
+				$this->render('envioSMS', array('respuestaSMS' => $data));
+		}
+
+    }
+	public function actioncompartirubicacion($idAlerta) {
+    
+		
+        $this->layout = 'column2';
+
+        $model = new alerta();
+
+		if(!isset($_POST['Agente'])){
+			
+			$agentes = new agente();
+			
+			$dataProvider= $agentes->search();
+
+			//envio a todos los agentes para que puedan compartir la ubiacion
+
+			$this->render('vistacompartirubicacion', array(
+
+				'dataProvider' => $dataProvider,
+	
+				'model' => $agentes,
+	
+			));
+
+		}else{
+			$agentes = new agente();
+
+			$agentes->attributes=$_POST['Agente'];
+
+			$datalocalizacion = $model->alertultpos($idAlerta);
+			extract($datalocalizacion[0]);
+			//die;
+			
+			$numero =$agentes->AgenteTelefono;
+
+			$texto = 'Hola... Te enviamos la ubicacion a revisar <a href = "https://www.google.com.ar/maps?q='.$MensajeLatitud.','.$MensajeLongitud.'"	>Haga Click aquí para ver la posicion...</a>. COM';
+
+			$link = 'https://api.whatsapp.com/send?phone='.$numero.'&test='.$texto;
+			//echo $link;
+			//die; 
+			$this->redirect($link, array('target' => '_blank'));
+		
+		}
+
+    }
+
+
+
+
 }

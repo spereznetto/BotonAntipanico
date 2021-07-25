@@ -41,6 +41,11 @@ $('.search-form form').submit(function(){
 		'UsuarioFinalNombre',
 		'UsuarioFinalDni',
 		'UsuarioFinalEstadoUsuario',
+		'UsuarioFinalTelefono',
+		['header' => 'Estado del Usuario',
+		'value' => '$dataProvider->UsuarioFinalEstadoUsuario->Descripcion',
+		],
+		
 		array(
 			'class'=>'CButtonColumn',
 		),

@@ -1,5 +1,4 @@
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
 <?php
 $form = $this->beginWidget('booster.widgets.TbActiveForm', array(
     'id' => 'login-form',

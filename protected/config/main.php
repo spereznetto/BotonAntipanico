@@ -37,7 +37,7 @@ return array(
 		'user'=>array(
 			'allowAutoLogin' => true, // habilita la autenticacion basada en cookies
             'loginUrl' => array('web/login'),
-            'returnUrl' => array('mensajehistorico/visualizardispositivos') //Url a la que lleva al usuario luego de loguearse
+            'returnUrl' => array('inicio/index') //Url a la que lleva al usuario luego de loguearse
 		),
 		'booster' => array(
             'class' => 'application.extensions.booster.components.Booster',
@@ -56,7 +56,7 @@ return array(
             'class' => 'application.components.Gis',
         ),
 		// uncomment the following to enable URLs in path-format
-		/*
+		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
@@ -65,7 +65,11 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
+		'curl' => array(
+			'class' => 'ext.curl.Curl',
+			//'options' => array(/.. additional curl options ../)
+	   ),
+		
 	
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=gps_efip',

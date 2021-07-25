@@ -63,7 +63,7 @@ array(
   (
     'label' => 'Envio SMS Check',
     'icon' => 'map-marker',
-    'url' => 'Yii::app()->createUrl("alerta/enviosms", array("idalerta"=>$data["idMensaje"]))',
+    'url' => 'Yii::app()->createUrl("alerta/enviosms", array("idalerta"=>$data["idAlerta"]))',
     'options' => array(
     'style' => 'margin:7px;',
     
@@ -73,7 +73,7 @@ array(
     (
       'label' => 'Compartir posiscion Whatsapp',
       'icon' => 'inbox',
-      'url' => 'Yii::app()->createUrl("alerta/compartirubicacion", array("idalerta"=>$data["idAlerta"]))',
+      'url' => 'Yii::app()->createUrl("alerta/compartirubicacion", array("idAlerta"=>$data["idAlerta"]))',
       'options' => array(
       'style' => 'margin:7px;',
      
@@ -83,7 +83,7 @@ array(
   (
       'label' => 'Descargar Alerta',
       'icon' => 'download',
-      'url' => 'Yii::app()->createUrl("informes/descargarposicion", array("idalerta"=>$data["idMensaje"]))',
+      'url' => 'Yii::app()->createUrl("informes/descargarposicion", array("idAlerta"=>$data["idAlerta"]))',
       'options' => array(
       'style' => 'margin:7px;'
       ),

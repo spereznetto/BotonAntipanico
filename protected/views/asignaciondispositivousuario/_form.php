@@ -4,6 +4,8 @@
 /* @var $form CActiveForm */
 ?>
 
+<div class="container" >
+	
 <div class="form">
 
 <?php $form=$this->beginWidget('booster.widgets.TbActiveForm', array(
@@ -54,3 +56,4 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+</div>

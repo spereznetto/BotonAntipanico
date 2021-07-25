@@ -4,9 +4,10 @@
 /* @var $form CActiveForm */
 ?>
 
+<div class="container" >
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('booster.widgets.TbActiveForm', array(
 	'id'=>'dispositivo-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
@@ -19,24 +20,39 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'IMEI'); ?>
-		<?php echo $form->textField($model,'IMEI',array('size'=>20,'maxlength'=>20)); ?>
-		<?php echo $form->error($model,'IMEI'); ?>
-	</div>
+		<div class="row">
+   
+			<div class="col-sm">
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'tipoDispositivo'); ?>
-		<?php echo $form->textField($model,'tipoDispositivo'); ?>
-		<?php echo $form->error($model,'tipoDispositivo'); ?>
-	</div>
+					<?php echo $form->textFieldGroup($model,'IMEI',array('size'=>20,'maxlength'=>20)); ?>
+					<?php echo $form->error($model,'IMEI'); ?>
+				
+			</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'estadoDispositivo'); ?>
-		<?php echo $form->textField($model,'estadoDispositivo'); ?>
-		<?php echo $form->error($model,'estadoDispositivo'); ?>
-	</div>
+		<div class="col-sm">
+					<?php echo $form->textFieldGroup($model,'estadoDispositivo'); ?>
+					<?php echo $form->error($model,'estadoDispositivo'); ?>
+		</div>
 
+		<div class="col-sm">
+
+	<?php
+             echo $form->select2Group(
+                    $model,
+                    'tipoDispositivo',
+                    array(
+                        'widgetOptions' => array(
+                            'data' => CHtml::listData(tipodispositivo::model()->findAll(), 'idTipoDispositivo', 'Descripcion'),
+                            'options' => array(
+                                'placeholder' => 'Seleccione una Zona',
+                            )
+                        )
+                    )
+                );
+            
+            ?>       
+	</div>
+	</div>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar'); ?>
 	</div>

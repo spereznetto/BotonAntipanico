@@ -47,6 +47,25 @@ class InicioController extends Controller {
 
     public function actionIndex() {
     
+
+        $this->layout = 'column2';
+
+        $modelfiltro = new filtro();
+
+        $model = new alerta();
+        $model = $model->obternerAlertas();
+
+        
+        $arrayDataProvider = new CArrayDataProvider($model , array(
+            'keyField' => 'IdAlerta',
+            'pagination' => false
+        ));
+        
+        $this->render('indexAlerta', array('arrayAlertas' => $arrayDataProvider));
+
+
+        
+        /*
         $this->layout = 'column2';
 
         $modelfiltro = new filtro();
@@ -61,6 +80,7 @@ class InicioController extends Controller {
         ));
         
         $this->render('index', array('arrayDataProvider' => $arrayDataProvider, 'modelfiltro' => $modelfiltro));
+*/
 
 
     }

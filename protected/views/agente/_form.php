@@ -4,9 +4,11 @@
 /* @var $form CActiveForm */
 ?>
 
+<div class="container" >
+
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('booster.widgets.TbActiveForm', array(
 	'id'=>'agente-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
@@ -18,23 +20,20 @@
 	<p class="note">Los campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
 	<div class="row">
-		<?php echo $form->labelEx($model,'AgenteNombre'); ?>
-		<?php echo $form->textField($model,'AgenteNombre',array('size'=>30,'maxlength'=>30)); ?>
-		<?php echo $form->error($model,'AgenteNombre'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'AgenteTelefono'); ?>
-		<?php echo $form->textField($model,'AgenteTelefono'); ?>
-		<?php echo $form->error($model,'AgenteTelefono'); ?>
+   
+			<div class="col-sm">
+		<?php echo $form->textFieldGroup($model,'AgenteNombre',array('size'=>30,'maxlength'=>30)); ?>
+			</div>
+	<div class="col-sm">
+		<?php echo $form->textFieldGroup($model,'AgenteTelefono'); ?>
 	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar'); ?>
 	</div>
-
+	</div>
+</div>
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->

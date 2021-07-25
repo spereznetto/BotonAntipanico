@@ -20,6 +20,10 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('UsuarioFinalEstadoUsuario')); ?>:</b>
 	<?php echo CHtml::encode($data->UsuarioFinalEstadoUsuario); ?>
 	<br />
+	
+	<b><?php echo CHtml::encode($data->getAttributeLabel('UsuarioFinalTelefono')); ?>:</b>
+	<?php echo CHtml::encode($data->UsuarioFinalTelefono); ?>
+	<br />
 
 
 </div>

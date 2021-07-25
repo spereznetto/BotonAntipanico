@@ -136,13 +136,11 @@ class mensajehistorico extends CActiveRecord
 			}	
 			
 		  // Aca el sql de un solo movil
-		  $sql = "SELECT idMensaje,MensajeIdTemporal,MensajetipoMensaje,MensajeIMEI,UsuarioFinalNombre,MensajeFechaHora,Descripcion as AlertaEstado 
-		  , MensajeLatitud,MensajeLongitud, MensajeNivelBateria
+		  $sql = "SELECT idMensaje,MensajeIdTemporal,MensajetipoMensaje,MensajeIMEI,UsuarioFinalNombre,MensajeFechaHora,
+		   MensajeLatitud,MensajeLongitud, MensajeNivelBateria
 		  FROM mensajehistorico a
 		  INNER JOIN asigaciondipositivousuario b ON a.MensajeIMEI = b.AsignacionIMEI AND asignacionfechabaja IS NULL
 		  INNER JOIN usuariofinal c ON c.idUsuarioFinal = b.AsignacionIdUsuarioFinal 
-		  INNER JOIN estadoalerta d ON d.idEstadoAlerta = a.MensajeAlertaEstado
-		  
 		  WHERE MensajeFechaHora >= '".$unasemana."' AND MensajeFechaHora <= '".$hoy."' 
 		  ORDER BY MensajeFechaHora DESC";
 
@@ -151,5 +149,30 @@ class mensajehistorico extends CActiveRecord
 		  //die;
 		  $consulta = Yii::app()->db->createCommand($sql)->queryAll();
 		  return $consulta;
-	}		  
+	}	
+
+	public function verUltimasPosiciones($datos = null) {
+		
+		if ($datos['desde'] != '') {
+			$hoy = $datos['hasta'];
+			$unasemana =  $datos['desde']; 
+	  
+		}else{
+			  $hoy = date("Y-m-d H:i:s");
+			  $unasemana =  date('Y-m-d H:i:s', strtotime($hoy . ' -31 day')); 
+			}	
+			
+		  // Aca el sql de un solo movil
+		  $sql = "SELECT idreporte,temporal_fechaservidor,temporal_fechagps,temporal_Completo,
+		  temporal_puerto,temporal_evento,Temporal_IdDispositivo, temporal_modelo
+		  FROM temporal_9001 
+		  WHERE temporal_fechaservidor >= '".$unasemana."' AND temporal_fechaservidor <= '".$hoy."' 
+		  ORDER BY idreporte DESC";
+
+
+		 // echo $sql;
+		  //die;
+		  $consulta = Yii::app()->db->createCommand($sql)->queryAll();
+		  return $consulta;
+	}		  	  
 }

@@ -30,6 +30,10 @@
 		<?php echo $form->label($model,'UsuarioFinalEstadoUsuario'); ?>
 		<?php echo $form->textField($model,'UsuarioFinalEstadoUsuario'); ?>
 	</div>
+	<div class="row">
+		<?php echo $form->label($model,'UsuarioFinalTelefono'); ?>
+		<?php echo $form->textField($model,'UsuarioFinalTelefono'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>

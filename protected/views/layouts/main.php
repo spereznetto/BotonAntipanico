@@ -23,10 +23,10 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <?php $cs->registerCoreScript('jquery.ui'); ?> 
-    <?php $cs->registerScriptFile(Yii::app()->request->baseUrl . "/js/funcionesGenerales.js"); ?>
-    <?php $cs->registerScript("cajasMovibles", "cajasMovibles(); //Habilita las cajas del tipo droppable ", CClientScript::POS_READY); ?>
-   
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/jquery.js'); ?>
+    <?php // $cs->registerScriptFile(Yii::app()->request->baseUrl . "/js/funcionesGenerales.js"); ?>
+    <?php //$cs->registerScript("cajasMovibles", "cajasMovibles(); //Habilita las cajas del tipo droppable ", CClientScript::POS_READY); ?>
+
   </head>
   <body>
     <?php if (Yii::app()->user->isGuest) $this->redirect('index.php?r=web/login'); ?>
@@ -45,27 +45,30 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
               <li class="waves-effect waves-light">
-                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('alerta/gestionalertas') ?>" role="button" aria-haspopup="true" ><i class='fa fa-bullhorn'></i>Gestion Alertas</a>
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('mensajehistorico/verultimasposiciones') ?>" role="button" aria-haspopup="true" ><i class='fa fa-align-justify'></i>  Ver Ultimos Mensajes</a>
               </li>
               <li class="waves-effect waves-light">
-                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('mensajehistorico/visualizardispositivos') ?>" role="button" aria-haspopup="true" ><i class='fa fa-clipboard'></i>Visualizar Dispositivos</a>
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('inicio/index') ?>" role="button" aria-haspopup="true" ><i class='fa fa-bullhorn'></i>  Gestion Alertas</a>
+              </li>
+              <li class="waves-effect waves-light">
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('mensajehistorico/visualizardispositivos') ?>" role="button" aria-haspopup="true" ><i class='fa fa-clipboard'></i>  Visualizar Dispositivos</a>
               </li>
                <li class="waves-effect waves-light">
-                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('dispositivo/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-mobile'></i> Dispositivos</a>
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('dispositivo/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-mobile'></i>  Dispositivos</a>
               </li>
               <li class="waves-effect waves-light">
-                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('usuariofinal/admin') ?>" role="button" aria-haspopup="true"><i class='fa fa-address-card'></i> Usuario Final</a>
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('usuariofinal/admin') ?>" role="button" aria-haspopup="true"><i class='fa fa-address-card'></i>  Usuario Final</a>
               </li>
               <li class="waves-effect waves-light">
-                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('asignaciondispositivousuario/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-address-book'></i>Asignacion Usuarios a Dispositivos</a>
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('asignaciondispositivousuario/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-address-book'></i>  Asignacion Usuarios a Dispositivos</a>
               </li>
               <li class="waves-effect waves-light">
-                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('agente/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-knight'></i>Agentes</a>
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('agente/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-brush'></i>  Agentes</a>
               </li>
               <li class="waves-effect waves-light">
-                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('usuariosistema/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-user'></i>Usuario Sistema</a>
+                      <a href="<?php echo Yii::app()->CreateAbsoluteUrl('usuariosistema/admin') ?>" role="button" aria-haspopup="true" ><i class='fa fa-user'></i>  Usuario Sistema</a>
               </li>
-                <li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('web/logout') ?>"><span><?php echo Yii::app()->user->name; ?></span>  <br>(Cerrar Sesion)</a></li>
+                <li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('web/logout') ?>"><span><?php echo Yii::app()->user->name; ?></span>  <br> (Cerrar Sesion)</a></li>
           </ul>
         </div>
    

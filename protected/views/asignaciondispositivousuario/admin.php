@@ -44,10 +44,11 @@ Todos los usuarios inales necesitan estar asociados a un dispositivo por medio d
 		['header' => 'Nombre del Usuario',
 		'value' => '$data->AsignacionIdUsuarioFinal->UsuarioFinalNombre',
 		],
+		
 		'AsignacionFechaAlta',
 		'AsignacionFechaBaja',
 		array(
-			'class'=>'CButtonColumn',
+			'class'=>'booster.widgets.TbButtonColumn',
 		),
 	),
 )); ?>

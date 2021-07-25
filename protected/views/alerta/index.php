@@ -6,6 +6,28 @@ $this->breadcrumbs=array(
 	'Alertas',
 );
 
+
+$cs = Yii::app()->clientScript;
+?>
+
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/jquery.js'); ?>
+    
+    <?php Yii::app()->clientScript->registerScriptFile('https://www.gstatic.com/charts/loader.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/funcionesGmapOSM.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet-src.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.draw-src.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.label-src.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.measurecontrol.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/l.control.geosearch.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/l.geosearch.provider.esri.js'); ?>
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/l.markerrotate.js'); ?>
+    <?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.css'); ?>
+    <?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.draw.css'); ?>
+    <?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.label.css'); ?>
+    <?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.measurecontrol.css'); ?>
+    <?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/js/leaflet/l.geosearch.css'); ?>
+
+
 ?>
 
 <h3>Gestion de Alertas</h3>

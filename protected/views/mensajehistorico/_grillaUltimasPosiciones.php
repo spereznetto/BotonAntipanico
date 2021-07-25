@@ -28,11 +28,6 @@ array(
  'header' => 'Nivel Bateria'
 ),
 
- array(
-'name' => 'AlertaEstado',
- 'header' => 'AlertaEstado'
-),
-
   array(
   'class' => 'booster.widgets.TbButtonColumn',
   'header' => 'Acciones',

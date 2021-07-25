@@ -32,7 +32,7 @@ class MensajehistoricoController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','admin','visualizardispositivos'),
+				'actions'=>array('create','update','admin','visualizardispositivos','verultimasposiciones'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -188,6 +188,25 @@ class MensajehistoricoController extends Controller
         ));
         
         $this->render('visualizardispositivos', array('arrayDataProvider' => $arrayDataProvider, 'modelfiltro' => $modelfiltro));
+
+
+    }
+
+	
+    public function actionVerUltimasPosiciones() {
+    
+        $this->layout = 'column1';
+
+        $model = new mensajehistorico();
+        $model = $model->verUltimasPosiciones();
+
+        
+        $arrayDataProvider = new CArrayDataProvider($model , array(
+            'keyField' => 'idreporte',
+            'pagination' => false
+        ));
+        
+        $this->render('_grillaVerUltimasPosiciones', array('arrayDataProvider' => $arrayDataProvider));
 
 
     }

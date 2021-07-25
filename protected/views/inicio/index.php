@@ -1,4 +1,6 @@
-<!--<script src="//maps.google.com/maps/api/js?key=AIzaSyAfKK-zWESZKP3J1pjFLukHSMd-hgbUUmY"></script>-->
+<?php Yii::app()->clientScript->registerScriptFile('https://www.gstatic.com/charts/loader.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/jquery.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/funcionesGmapOSM.js'); ?>
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet-src.js'); ?>
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.draw-src.js'); ?>
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . '/js/leaflet/leaflet.label-src.js'); ?>
@@ -16,6 +18,7 @@
   .popover {
     max-width: 600px;
   }
+
 </style>
 
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/googlemaps.css" />

@@ -36,6 +36,11 @@
 		<?php echo $form->textField($model,'UsuarioFinalEstadoUsuario'); ?>
 		<?php echo $form->error($model,'UsuarioFinalEstadoUsuario'); ?>
 	</div>
+	<div class="row">
+		<?php echo $form->labelEx($model,'UsuarioFinalTelefono'); ?>
+		<?php echo $form->textField($model,'UsuarioFinalTelefono'); ?>
+		<?php echo $form->error($model,'UsuarioFinalTelefono'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar'); ?>

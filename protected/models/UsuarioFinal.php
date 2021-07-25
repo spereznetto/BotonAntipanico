@@ -28,11 +28,11 @@ class UsuarioFinal extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('UsuarioFinalDni, UsuarioFinalEstadoUsuario', 'numerical', 'integerOnly'=>true),
+			array('UsuarioFinalDni, UsuarioFinalEstadoUsuario,UsuarioFinalTelefono', 'numerical', 'integerOnly'=>true),
 			array('UsuarioFinalNombre', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idUsuarioFinal, UsuarioFinalNombre, UsuarioFinalDni, UsuarioFinalEstadoUsuario', 'safe', 'on'=>'search'),
+			array('idUsuarioFinal, UsuarioFinalNombre, UsuarioFinalDni, UsuarioFinalEstadoUsuario,UsuarioFinalTelefono', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -44,6 +44,7 @@ class UsuarioFinal extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'UsuarioFinalEstadoUsuario' => array(self::HAS_ONE, 'estadousuario', 'idEstadoUsuario'),
 		);
 	}
 
@@ -56,6 +57,7 @@ class UsuarioFinal extends CActiveRecord
 			'idUsuarioFinal' => 'Id Usuario Final',
 			'UsuarioFinalNombre' => 'Usuario Final Nombre',
 			'UsuarioFinalDni' => 'Usuario Final Dni',
+			'UsuarioFinalTelefono' => 'UsuarioFinalTelefono',
 			'UsuarioFinalEstadoUsuario' => 'Usuario Final Estado Usuario',
 		);
 	}
@@ -81,7 +83,10 @@ class UsuarioFinal extends CActiveRecord
 		$criteria->compare('idUsuarioFinal',$this->idUsuarioFinal);
 		$criteria->compare('UsuarioFinalNombre',$this->UsuarioFinalNombre,true);
 		$criteria->compare('UsuarioFinalDni',$this->UsuarioFinalDni);
-		$criteria->compare('UsuarioFinalEstadoUsuario',$this->UsuarioFinalEstadoUsuario);
+		$criteria->compare('UsuarioFinalTelefono',$this->UsuarioFinalTelefono);
+		$criteria->compare('UsuarioFinalEstadoUsuario',$this->UsuarioFinalEstadoUsuario,true);
+		
+		
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

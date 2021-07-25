@@ -34,7 +34,7 @@ class UserIdentity extends CUserIdentity
 		} else {
             Yii::app()->session['wrongPass'] = 0;
             $this->_id = $usuario->idUsuario;
-            $this->setState('type', $usuario->UsuarioTipoUsuario->TipoUsuario_Descripcion); //Guarda en cada inicio de sesion el tipo de usuario que fue asignado, para ser usado en las reglas de acceso en cada controlador.
+            $this->setState('type', $usuario->UsuarioTipoUsuario->Descripcion); //Guarda en cada inicio de sesion el tipo de usuario que fue asignado, para ser usado en las reglas de acceso en cada controlador.
             $this->setState('nombreusuario', $usuario->UsuarioNombre); //Guarda en cada inicio de sesion el nombre que tiene asignado en la tabla.
             $this->setState('email', $usuario->UsuarioEmail); //Guarda en cada inicio de sesion el nombre que tiene asignado en la tabla.
             
