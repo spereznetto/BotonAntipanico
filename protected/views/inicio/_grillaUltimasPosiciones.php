@@ -29,10 +29,10 @@ array(
 ),
 
  array(
-'header' => '',
+'header' => 'Posicion',
  'type' => 'raw',
  'value' => '"<div class=\"btn-group\">
-    <li><a id=\"".$data["idMensaje"]."\" href=\"javascript:void(0)\" onclick=\"verposicion(".$data["MensajeLatitud"].",".$data["MensajeLongitud"].");\">Ver en el mapa</a></li>
+    <li><a id=\"".$data["idMensaje"]."\" href=\"javascript:void(0)\" onclick=\"verposicion(".$data["AlertaLatitud"].",".$data["AlertaLongitud"].");\">Ver en el mapa</a></li>
       </div>"',
  ),
   array(

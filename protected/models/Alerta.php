@@ -115,7 +115,12 @@ class Alerta extends CActiveRecord
 			
 		  // Aca el sql de un solo movil
 		  $sql = "
-		  SELECT idAlerta,UsuarioFinalNombre,AlertaFechaDesde,AlertaFechaHasta,IMEI,e.Descripcion AS AlertaEstado, f.descripcion AS tipoDispositivo
+		  SELECT idAlerta,UsuarioFinalNombre,AlertaFechaDesde,AlertaFechaHasta,IMEI,e.Descripcion AS AlertaEstado, 
+		  f.descripcion AS tipoDispositivo,
+		  (SELECT MensajeLatitud FROM mensajehistorico h WHERE h.MensajeIMEI = d.IMEI ORDER BY idMensaje DESC LIMIT 1) AS AlertaLatitud,
+		   (SELECT MensajeLongitud FROM mensajehistorico h WHERE h.MensajeIMEI = d.IMEI ORDER BY idMensaje DESC LIMIT 1) AS AlertaLongitud
+		
+
 					FROM alerta a
 					LEFT JOIN asigaciondipositivousuario b ON b.idAsignacion = a.AlertaidAsignacion AND b.asignacionfechabaja IS NULL
 					LEFT JOIN usuariofinal c ON c.idUsuarioFinal = b.AsignacionIdUsuarioFinal 

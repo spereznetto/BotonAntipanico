@@ -42,6 +42,14 @@ array(
  'header' => 'Estado'
 ),
 
+array(
+  'header' => '',
+   'type' => 'raw',
+   'value' => '"<div class=\"btn-group\">
+      <li><a id=\"".$data["idMensaje"]."\" href=\"javascript:void(0)\" onclick=\"verseguimiento(".$data["AlertaLatitud"].",".$data["AlertaLongitud"].");\">Ver en el mapa</a></li>
+        </div>"',
+   ),
+
   array(
   'class' => 'booster.widgets.TbButtonColumn',
   'header' => 'Acciones',
@@ -52,7 +60,7 @@ array(
       
     'verposiciones' => array
     (
-      'label' => 'Ver Posiciones',
+      'label' => 'Ver Ultimas 5 Posiciones',
       'icon' => 'search',
       'url' => 'Yii::app()->createUrl("mensajehistorico/verposicionesalerta", array("idAlerta"=>$data["idAlerta"]))',
       'options' => array(

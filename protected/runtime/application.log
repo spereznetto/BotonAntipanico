@@ -5584,3 +5584,27 @@ Stack trace:
 REQUEST_URI=/BotonAntipanico/index.php/alerta/index.php
 HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php/alerta/index.php
 ---
+2021/07/25 20:56:02 [error] [exception.CException] CException: InicioController cannot find the requested view "_grillaUltimasAlertas". in E:\Dropbox\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 E:\Dropbox\htdocs\BotonAntipanico\protected\views\inicio\indexAlerta.php(42): CController->renderPartial('_grillaUltimasA...', Array)
+#1 E:\Dropbox\htdocs\framework\web\CBaseController.php(126): require('E:\\Dropbox\\htdo...')
+#2 E:\Dropbox\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Dropbox\\htdo...', Array, true)
+#3 E:\Dropbox\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\Dropbox\\htdo...', Array, true)
+#4 E:\Dropbox\htdocs\framework\web\CController.php(782): CController->renderPartial('indexAlerta', Array, true)
+#5 E:\Dropbox\htdocs\BotonAntipanico\protected\controllers\InicioController.php(64): CController->render('indexAlerta', Array)
+#6 E:\Dropbox\htdocs\framework\web\actions\CInlineAction.php(49): InicioController->actionIndex()
+#7 E:\Dropbox\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 E:\Dropbox\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 E:\Dropbox\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 E:\Dropbox\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 E:\Dropbox\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 E:\Dropbox\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#14 E:\Dropbox\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#16 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#17 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/BotonAntipanico/
+---
