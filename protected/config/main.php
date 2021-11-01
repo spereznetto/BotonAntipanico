@@ -56,7 +56,7 @@ return array(
             'class' => 'application.components.Gis',
         ),
 		// uncomment the following to enable URLs in path-format
-		
+		/*
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
@@ -65,6 +65,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
+		*/
 		'curl' => array(
 			'class' => 'ext.curl.Curl',
 			//'options' => array(/.. additional curl options ../)

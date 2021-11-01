@@ -5608,3 +5608,221 @@ Stack trace:
 #19 {main}
 REQUEST_URI=/BotonAntipanico/
 ---
+2021/10/12 17:00:08 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "enviosmsbateria". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('enviosmsbateria')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('enviosmsbateria')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/enviosms...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php/alerta/enviosmsbateria?movil=86810
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php/mensajehistorico/visualizardispositivos
+---
+2021/10/12 17:00:13 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposiciones". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposiciones')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposiciones')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/verposic...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php/alerta/verposiciones?idMensaje=221
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php/mensajehistorico/visualizardispositivos
+---
+2021/10/28 22:24:17 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index.php". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('inicio/index.ph...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php/inicio/index.php
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php/inicio/index
+---
+2021/10/28 22:25:06 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index.php". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('mensajehistoric...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php/mensajehistorico/index.php
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php/mensajehistorico/verultimasposiciones
+---
+2021/10/28 22:35:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposiciones". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposiciones')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposiciones')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/verposic...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php/alerta/verposiciones?idMensaje=221
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php/mensajehistorico/visualizardispositivos
+---
+2021/10/28 22:35:42 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposiciones". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposiciones')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposiciones')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/verposic...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php/alerta/verposiciones?idMensaje=221
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php/mensajehistorico/visualizardispositivos
+---
+2021/10/28 22:37:52 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposiciones". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposiciones')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposiciones')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/verposic...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php/alerta/verposiciones?idMensaje=229
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php/mensajehistorico/visualizardispositivos
+---
+2021/10/28 22:37:57 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "enviosmsbateria". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('enviosmsbateria')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('enviosmsbateria')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/enviosms...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php/alerta/enviosmsbateria?movil=86810
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php/mensajehistorico/visualizardispositivos
+---
+2021/10/28 22:58:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposiciones". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposiciones')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposiciones')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/verposic...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=alerta/verposiciones&idMensaje=229
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=mensajehistorico/visualizardispositivos
+---
+2021/10/28 22:58:41 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposiciones". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposiciones')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposiciones')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/verposic...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=alerta/verposiciones&idMensaje=229
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=mensajehistorico/visualizardispositivos
+---
+2021/10/28 22:58:56 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "enviosmsbateria". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('enviosmsbateria')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('enviosmsbateria')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/enviosms...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=alerta/enviosmsbateria&movil=86810
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=mensajehistorico/visualizardispositivos
+---
+2021/10/28 22:59:31 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "enviosmsbateria". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('enviosmsbateria')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('enviosmsbateria')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/enviosms...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=alerta/enviosmsbateria&movil=86810
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=mensajehistorico/visualizardispositivos
+---
+2021/10/28 22:59:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "enviosmsbateria". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('enviosmsbateria')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('enviosmsbateria')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/enviosms...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=alerta/enviosmsbateria&movil=86810
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=mensajehistorico/visualizardispositivos
+---
+2021/10/28 23:04:26 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposiciones". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposiciones')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposiciones')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/verposic...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=alerta/verposiciones&idMensaje=229
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=mensajehistorico/visualizardispositivos
+---
+2021/10/28 23:06:54 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposiciones". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposiciones')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposiciones')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/verposic...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=alerta/verposiciones&idMensaje=229
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=mensajehistorico/visualizardispositivos
+---
+2021/10/28 23:09:23 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "enviosmsbateria". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('enviosmsbateria')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('enviosmsbateria')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/enviosms...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=alerta/enviosmsbateria&movil=86810
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=mensajehistorico/visualizardispositivos
+---
+2021/10/28 23:09:32 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposiciones". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposiciones')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposiciones')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/verposic...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=alerta/verposiciones&idMensaje=229
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=mensajehistorico/visualizardispositivos
+---
+2021/10/28 23:11:23 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "informes/descargarposicion". in E:\Dropbox\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('informes/descar...')
+#1 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=informes/descargarposicion&idAlerta=4
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=inicio/index
+---
+2021/10/29 16:49:00 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposicionesalerta". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposicionesal...')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposicionesal...')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('mensajehistoric...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=mensajehistorico/verposicionesalerta&idAlerta=4
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=inicio/index
+---
+2021/10/29 16:50:03 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "verposiciones". in E:\Dropbox\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\Dropbox\htdocs\framework\web\CController.php(270): CController->missingAction('verposiciones')
+#1 E:\Dropbox\htdocs\framework\web\CWebApplication.php(282): CController->run('verposiciones')
+#2 E:\Dropbox\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('alerta/verposic...')
+#3 E:\Dropbox\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Dropbox\htdocs\BotonAntipanico\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/BotonAntipanico/index.php?r=alerta/verposiciones&idMensaje=244
+HTTP_REFERER=http://localhost:8182/BotonAntipanico/index.php?r=mensajehistorico/visualizardispositivos
+---
