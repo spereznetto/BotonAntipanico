@@ -230,6 +230,8 @@ function verRecorrido() {
   });
 }
 
+
+
 function verSeguimiento(movil, manual) {
   datos = {
     "movil": movil

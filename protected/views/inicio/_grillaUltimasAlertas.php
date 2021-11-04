@@ -37,11 +37,47 @@ array(
   'name' => 'tipoDispositivo',
    'header' => 'Tipo Dispositivo'
   ),
+ 
  array(
-'name' => 'AlertaEstado',
- 'header' => 'Estado'
-),
+  'header' => '',
+   'type' => 'raw',
+   'value' => '"<div class=\"form-group\">
+                  <select class=\"form-control\" id=\"alertaEstado\" 
+                        onchange=\"cambiarestado(".$data["idAlerta"].",this.options[this.selectedIndex].value);\">
+                        <option value=\"1\">".$data["AlertaEstado"]."</option>
+                        <option value=\"1\">ENESPERA</option>
+                        <option value=\"2\">ENPROCESO</option>
+                        <option value=\"3\">CERRADA</option>
+                        <option value=\"4\">ANULADA</option>
+                      </select>
+                    </div>
+        </div>"',
+   ),
 
+ /*
+ array(
+  'header' => '',
+   'type' => 'raw',
+   'value' => '"<div class=\"form-group\">
+              <select class=\"form-control\" id=\"alertaEstado\" 
+                    onchange=\"cambiarestado(".$data["idAlerta"].",".$data["AlertaEstado"].");\>
+                <option>ENESPERA</option>
+                <option>ENPROCESO</option>
+                <option>CERRADA</option>
+                <option>ANULADA</option>
+              </select>
+            </div>
+   "',
+   ),*/
+ /*
+array(
+  'filter' => CHtml::activeDropDownList(
+    $arrayAlertas,
+    'AlertaEstado',
+    CHtml::listData(estadoAlerta::model()->findAll(), 'idEstadoAlerta', 'Descripcion')
+      )
+),
+ */
 array(
   'header' => '',
    'type' => 'raw',
@@ -62,7 +98,7 @@ array(
     (
       'label' => 'Ver Ultimas 5 Posiciones',
       'icon' => 'search',
-      'url' => 'Yii::app()->createUrl("mensajehistorico/verposicionesalerta", array("idAlerta"=>$data["idAlerta"]))',
+      'url' => 'Yii::app()->createUrl("alerta/verposicionalerta", array("idAlerta"=>$data["idAlerta"]))',
       'options' => array(
       'style' => 'margin:7px;',
      

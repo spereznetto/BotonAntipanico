@@ -28,11 +28,11 @@ class AlertaController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','cambiarestado'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','gestionalertas','envioSMS','compartirubicacion'),
+				'actions'=>array('create','update','gestionalertas','envioSMS','compartirubicacion','cambiarestado','verposicionalerta'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -223,6 +223,64 @@ class AlertaController extends Controller
 		}
 
     }
+
+	public function actionCambiarestado() {
+    
+		//echo $_POST["idalerta"];
+		
+        $this->layout = 'column2';
+
+        $model = new alerta();
+		//echo "cambio estado";
+
+		if(($_POST['estado'])){
+
+			$model = $model->findByPK($_POST['idalerta']);
+			$model->estadoAlerta = $_POST['estado'];
+
+				if ($model->save()) {
+					echo '<script language="javascript">alert("estado cambiado");</script>';
+					
+				}else {
+					echo '<script language="javascript">alert("estado NO cambiado");</script>';
+				}
+			
+							
+		}
+
+		
+        $model = new alerta();
+        $model = $model->obternerAlertas();
+
+        
+        $arrayAlertas = new CArrayDataProvider($model , array(
+            'keyField' => 'IdAlerta',
+            'pagination' => false
+        ));
+        
+        $this->render('index', array('arrayAlertas' => $arrayAlertas));
+		
+    }
+
+
+	public function actionVerposicionalerta() {
+    
+		$this->layout = 'column1';
+	
+		$model = new mensajehistorico();
+		$model = $model->verUltimasPosiciones();
+	
+		
+		$arrayDataProvider = new CArrayDataProvider($model , array(
+			'keyField' => 'idreporte',
+			'pagination' => false
+		));
+		
+		$this->render('_grillaVerUltimasPosiciones', array('arrayDataProvider' => $arrayDataProvider));
+	
+	
+	}
+
 	public function actioncompartirubicacion($idAlerta) {
     
 		

@@ -21,13 +21,13 @@ array(
 ),
  array(
 'name' => 'MensajeFechaHora',
- 'header' => 'Fecha',
+ 'header' => 'Fecha Ultimo Registro',
  ),
  array(
 'name' => 'MensajeNivelBateria',
  'header' => 'Nivel Bateria'
 ),
-
+/*
   array(
   'class' => 'booster.widgets.TbButtonColumn',
   'header' => 'Acciones',
@@ -69,6 +69,7 @@ array(
 'style' => 'width: 110px',
  ),
  )
+ */
 )
 ));
 

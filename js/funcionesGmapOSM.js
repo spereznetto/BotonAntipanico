@@ -42,7 +42,40 @@ function init() {
     }).addTo(map);
 }
 
-
+function cambiarestado(idalerta, estado) {
+    datos = {
+      "idalerta": idalerta,
+      "estado": estado
+    };
+  
+    $.ajax({
+      url: "index.php?r=alerta/cambiarestado",
+      type: 'POST',
+      data: datos,
+      context: document.body,
+      success: function (data) {
+  
+        if (data.length == 0) {
+          alert("No se encontraron registros en el rango de fechas seleccionado");
+          if (todosSeguimientos.indexOf(movil) !== -1) {
+            todosSeguimientos.splice(todosSeguimientos.indexOf(movil), 1);
+          }
+          return;
+        }
+        if (data.length === 1 && data[0] === null) {
+          alert("No existen reportes en la última hora.");
+          if (todosSeguimientos.indexOf(movil) !== -1) {
+            todosSeguimientos.splice(todosSeguimientos.indexOf(movil), 1);
+          }
+          return;
+        }
+  
+        visualizaSeguimiento(data, manual); //llama a la funcion que visualiza el recorrido, que se encuentra en funcionesGmap.js
+      }
+    }).error(function (e) {
+      console.log("Se produjo un error.\n");
+    });
+  }
 function verseguimiento(lat,lon) {
     map.invalidateSize();
     limpiarMapa();

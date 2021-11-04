@@ -150,6 +150,33 @@ class mensajehistorico extends CActiveRecord
 		  $consulta = Yii::app()->db->createCommand($sql)->queryAll();
 		  return $consulta;
 	}	
+	public function obtenerUltimasPosiciones($idDispMovil = null,$datos = null) {
+		
+		if ($datos['desde'] != '') {
+			$hoy = $datos['hasta'];
+			$unasemana =  $datos['desde']; 
+	  
+		}else{
+			  $hoy = date("Y-m-d H:i:s");
+			  $unasemana =  date('Y-m-d H:i:s', strtotime($hoy . ' -31 day')); 
+			}	
+			
+		  // Aca el sql de un solo movil
+		   $sql = "SELECT DISTINCT MensajetipoMensaje,MensajeIMEI,UsuarioFinalNombre,MAX(MensajeFechaHora) as MensajeFechaHora,
+		   MensajeLatitud,MensajeLongitud, MensajeNivelBateria
+		  FROM mensajehistorico a
+		  INNER JOIN asigaciondipositivousuario b ON a.MensajeIMEI = b.AsignacionIMEI AND asignacionfechabaja IS NULL
+		  INNER JOIN usuariofinal c ON c.idUsuarioFinal = b.AsignacionIdUsuarioFinal 
+		  WHERE MensajeFechaHora >= '".$unasemana."' AND MensajeFechaHora <= '".$hoy."' 
+		  GROUP BY MensajetipoMensaje,MensajeIMEI,UsuarioFinalNombre
+		  ORDER BY MensajeFechaHora DESC";
+
+
+		 // echo $sql;
+		  //die;
+		  $consulta = Yii::app()->db->createCommand($sql)->queryAll();
+		  return $consulta;
+	}	
 
 	public function verUltimasPosiciones($datos = null) {
 		

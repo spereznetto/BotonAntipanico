@@ -1,6 +1,6 @@
 <?php
 
-class MensajehistoricoController extends Controller
+class EstadoalertaController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -32,7 +32,7 @@ class MensajehistoricoController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','admin','visualizardispositivos','verultimasposiciones'),
+				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -62,16 +62,16 @@ class MensajehistoricoController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new mensajehistorico;
+		$model=new estadoAlerta;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['mensajehistorico']))
+		if(isset($_POST['estadoAlerta']))
 		{
-			$model->attributes=$_POST['mensajehistorico'];
+			$model->attributes=$_POST['estadoAlerta'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idMensaje));
+				$this->redirect(array('view','id'=>$model->idEstadoAlerta));
 		}
 
 		$this->render('create',array(
@@ -91,11 +91,11 @@ class MensajehistoricoController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['mensajehistorico']))
+		if(isset($_POST['estadoAlerta']))
 		{
-			$model->attributes=$_POST['mensajehistorico'];
+			$model->attributes=$_POST['estadoAlerta'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idMensaje));
+				$this->redirect(array('view','id'=>$model->idEstadoAlerta));
 		}
 
 		$this->render('update',array(
@@ -122,7 +122,7 @@ class MensajehistoricoController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('mensajehistorico');
+		$dataProvider=new CActiveDataProvider('estadoAlerta');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +133,10 @@ class MensajehistoricoController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new mensajehistorico('search');
+		$model=new estadoAlerta('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['mensajehistorico']))
-			$model->attributes=$_GET['mensajehistorico'];
+		if(isset($_GET['estadoAlerta']))
+			$model->attributes=$_GET['estadoAlerta'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,12 +147,12 @@ class MensajehistoricoController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return mensajehistorico the loaded model
+	 * @return estadoAlerta the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=mensajehistorico::model()->findByPk($id);
+		$model=estadoAlerta::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -160,54 +160,14 @@ class MensajehistoricoController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param mensajehistorico $model the model to be validated
+	 * @param estadoAlerta $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='mensajehistorico-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='estado-alerta-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
-
-	
-    public function actionVisualizardispositivos() {
-    
-        $this->layout = 'column2';
-
-        $modelfiltro = new filtro();
-
-        $model = new mensajehistorico();
-        $model = $model->obtenerUltimasPosiciones();
-
-        
-        $arrayDataProvider = new CArrayDataProvider($model , array(
-            'keyField' => 'MensajeIMEI',
-            'pagination' => false
-        ));
-        
-        $this->render('visualizardispositivos', array('arrayDataProvider' => $arrayDataProvider, 'modelfiltro' => $modelfiltro));
-
-
-    }
-
-	
-    public function actionVerUltimasPosiciones() {
-    
-        $this->layout = 'column1';
-
-        $model = new mensajehistorico();
-        $model = $model->verUltimasPosiciones();
-
-        
-        $arrayDataProvider = new CArrayDataProvider($model , array(
-            'keyField' => 'idreporte',
-            'pagination' => false
-        ));
-        
-        $this->render('_grillaVerUltimasPosiciones', array('arrayDataProvider' => $arrayDataProvider));
-
-
-    }
 }

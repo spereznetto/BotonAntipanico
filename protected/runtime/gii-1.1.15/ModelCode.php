@@ -2,7 +2,7 @@
 return array (
   'template' => 'default',
   'connectionId' => 'db',
-  'tablePrefix' => 'usuariofinal',
+  'tablePrefix' => 'estadoalerta',
   'modelPath' => 'application.models',
   'baseClass' => 'CActiveRecord',
   'buildRelations' => '0',

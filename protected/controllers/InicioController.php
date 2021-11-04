@@ -17,15 +17,17 @@ class InicioController extends Controller {
      * Este metodo es utilizado por el 'accessControl' del metodo filter.
      */
     public function accessRules() {
-        if (!Yii::app()->user->isGuest) {
+        /*if (!Yii::app()->user->isGuest) {
             $permisos = array(
                 'index'
                  // acceso a todos los action para los usuarios 
             );
         } else {
             //Si no es un usuario logueado, devuelve el array vacio de manera que no deje utilizar ninguna accion
-            $permisos = array('vermovilevento');
+            
         }
+        */
+        $permisos = array('index','vermovilevento');
 
         return array(
             array(
@@ -46,6 +48,45 @@ class InicioController extends Controller {
     
 
     public function actionIndex() {
+    
+
+        $this->layout = 'column2';
+
+        $modelfiltro = new filtro();
+
+        $model = new alerta();
+        $model = $model->obternerAlertas();
+
+        
+        $arrayDataProvider = new CArrayDataProvider($model , array(
+            'keyField' => 'IdAlerta',
+            'pagination' => false
+        ));
+        
+        $this->render('indexAlerta', array('arrayAlertas' => $arrayDataProvider));
+
+
+        
+        /*
+        $this->layout = 'column2';
+
+        $modelfiltro = new filtro();
+
+        $model = new mensajehistorico();
+        $model = $model->obtenerPosiciones();
+
+        
+        $arrayDataProvider = new CArrayDataProvider($model , array(
+            'keyField' => 'MensajeIMEI',
+            'pagination' => false
+        ));
+        
+        $this->render('index', array('arrayDataProvider' => $arrayDataProvider, 'modelfiltro' => $modelfiltro));
+*/
+
+
+    }
+    public function actionCambirestado($idalerta) {
     
 
         $this->layout = 'column2';
