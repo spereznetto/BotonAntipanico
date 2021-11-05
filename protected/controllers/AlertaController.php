@@ -315,11 +315,11 @@ class AlertaController extends Controller
 			
 			$numero =$agentes->AgenteTelefono;
 
-			$texto = 'Hola... Te enviamos la ubicacion a revisar <a href = "https://www.google.com.ar/maps?q='.$MensajeLatitud.','.$MensajeLongitud.'"	>Haga Click aquí para ver la posicion...</a>. COM';
+			$texto = 'Hola... Te enviamos la ubicacion a revisar <a href = "https://www.google.com.ar/maps?q='.$MensajeLatitud.','.$MensajeLongitud.'"	>Haga Click aquí para ver la posicion...</a>';
 
 			$link = 'https://api.whatsapp.com/send?phone='.$numero.'&test='.$texto;
-			//echo $link;
-			//die; 
+			echo $link;
+			die; 
 			$this->redirect($link, array('target' => '_blank'));
 		
 		}

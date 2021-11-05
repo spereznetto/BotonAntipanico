@@ -4,7 +4,7 @@
 <?php if(isset($respuestaSMS)) { ?>
 
 	<div class="row">
-		Confirmacion de envio:  <?php echo $respuestaSMS; ?>* 
+		Confirmacion de envio:  El SMS fue enviado con exito!!  
 	</div>
 <?php   } else  {  ?>
 
